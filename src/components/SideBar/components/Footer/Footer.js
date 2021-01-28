@@ -6,10 +6,11 @@ import StyledFooter from "./StyledFooter";
 const Footer = (props) => {
   return (
     <StyledFooter>
-      <code>
+      <code>Built by Brian. Brought to you in part by electricity. 2021</code>
+      {/* <code>
         Built by Brian, 2020, using React. Brought to you in part by
         electricity.
-      </code>
+      </code> */}
     </StyledFooter>
   );
 };
