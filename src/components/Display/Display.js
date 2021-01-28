@@ -4,6 +4,7 @@ import { Route, useHistory } from "react-router-dom";
 import StyledDisplay from "./StyledDisplay";
 import Home from "./Components/Home/Home";
 import Now from './Components/Now/Now';
+import Contact from './Components/Contact/Contact';
 
 const Display = (props) => {
   const history = useHistory();
@@ -16,6 +17,7 @@ const Display = (props) => {
       {/* </div> */}
       <Route exact path="/" component={Home} />
       <Route path="/now" component={Now} />
+      <Route path="/contact" component={Contact} />
     </StyledDisplay>
   );
 };
