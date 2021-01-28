@@ -1,6 +1,6 @@
 //
 import React from "react";
-import { Route } from "react-router-dom";
+// import { Route } from "react-router-dom";
 import './app.css'
 //components
 import StyledApp from './StyledApp';
