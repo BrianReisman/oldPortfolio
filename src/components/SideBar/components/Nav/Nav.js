@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 //
 import StyledNav from './StyledNav';
@@ -9,10 +9,10 @@ return(
   <StyledNav>
     <nav>
       <ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/now'>Now</Link></li>
-        <li><Link to='/work'>Work</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>
+        {/* <NavLink exact to='/'>Home</NavLink> */}
+        <NavLink to='/now'>Now</NavLink>
+        <NavLink to='/work'>Work</NavLink>
+        <NavLink to='/contact'>Contact</NavLink>
       </ul>
     </nav>
   </StyledNav>

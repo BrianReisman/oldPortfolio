@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 const StyledWelcomeText = styled.div`
   /* border: 1px solid blue; */
+  padding: 4% 4% 4% 8%;
   .name {
-    font-size: 4.5rem;
+    font-size: 7rem;
   }
   .accent,
   .lastAccent {
@@ -11,13 +12,17 @@ const StyledWelcomeText = styled.div`
   }
   .lastAccent {
     font-size: 3.5rem;
-    line-height: 0.25;
+    line-height: 0.75;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   s {
     text-decoration-color: tomato;
+  }
+  a {
+    text-decoration: none;
+    color: tomato;
   }
 `;
 export default StyledWelcomeText;

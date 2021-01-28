@@ -1,12 +1,17 @@
-import React from 'react';
+import React from "react";
 
 //
-import StyledFooter from './StyledFooter';
+import StyledFooter from "./StyledFooter";
 
 const Footer = (props) => {
-return(
-  <StyledFooter>footer text here</StyledFooter>
-)
+  return (
+    <StyledFooter>
+      <code>
+        Built by Brian, 2020, using React. Brought to you in part by
+        electricity.
+      </code>
+    </StyledFooter>
+  );
 };
 
 export default Footer;

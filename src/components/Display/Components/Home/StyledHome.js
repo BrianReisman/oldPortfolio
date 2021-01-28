@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import headshot from "../../assets/images/BrianReismanlgcropped.jpg";
+import headshot from "../../../../assets/images/BrianReismanlgcropped.jpg";
 
 const StyledHome = styled.div`
   /* border: 1px solid blue; */
