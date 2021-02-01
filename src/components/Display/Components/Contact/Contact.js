@@ -8,6 +8,7 @@ import Icons from "../Icons/Icons";
 const Contact = (props) => {
   const btnClickHandler = (e) => {
     e.preventDefault();
+    alert('I would\'ve clicked the button out of curiosity too! Feel free to contact me directly at BrianReisman@ProtonMail.com')
   };
 
   return (
@@ -43,11 +44,12 @@ const Contact = (props) => {
           {/* <input type="textarea" id="message" /> */}
           <textarea
             id="message"
-            placeholder="Message written in verse will be replied to first."
+            placeholder="Messages written in verse will be replied to first."
             cols="80" rows="8"
           />
         </label>
-        <button onClick={btnClickHandler}>Send it! (You Won't)</button>
+        <button onClick={btnClickHandler}>This button doesn't work yet! (But you can still click me)</button>
+        {/* <button onClick={btnClickHandler}>Send it! (You Won't)</button> */}
       </form>
     </StyledContact>
   );

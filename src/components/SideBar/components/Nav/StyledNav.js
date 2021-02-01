@@ -30,6 +30,7 @@ const StyledNav = styled.div`
     text-decoration: none;
     color: tomato;
     text-align: center;
+    transition-duration: .15s;
     :hover {
       background-color: tomato;
       color: white;

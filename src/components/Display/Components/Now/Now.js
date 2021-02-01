@@ -8,7 +8,7 @@ const Now = (props) => {
   return (
     <StyledNow>
       <div className="containerNowTop">
-        <p className='inline'>Interested in what I've done? 👉</p>
+        <p className="inline">Interested in what I've done? 👉</p>
         <span className="icons">
           <Icons />
         </span>
@@ -24,8 +24,8 @@ const Now = (props) => {
           program
         </li>
         <li>
-          📘 Reading JavaScript: The Definitive Guide (currently on page 272,
-          and just learned that in ES6 there is dynamic importing...?!)
+          Reading JavaScript: The Definitive Guide (currently on page 272, and
+          just learned that in ES6 there is dynamic importing...?!)
         </li>
         {/* <li>Spending too much money adding to my 🍵tea tea library.</li> */}
         <li>
@@ -48,7 +48,7 @@ const Now = (props) => {
         <li>Muji Pens</li>
         <li>
           Day dreaming about when I can travel next, and fantasizing what a week
-          (...or two 😀😍) would look like{" "}
+          (...or 2) would look like{" "}
           <a
             href="https://www.booking.com/hotel/ge/kazbegi-view.html"
             target="_blank"
@@ -69,11 +69,10 @@ const Now = (props) => {
         {/* <li>Reading Seth Godin's The Practice</li> */}
       </ul>
 
-      <p>Here's what's next</p>
       <ul>
-        <li>Typescript</li>
-        <li>Testing</li>
-        <li>PHP >>> For wordpress</li>
+        <p>Here's what's next</p>
+        <li>Introducing myself to stictly typed languages with Typescript</li>
+        <li>Deepending my testing knowledge with Jest</li>
       </ul>
     </StyledNow>
   );

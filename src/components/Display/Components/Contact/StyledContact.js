@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledContact = styled.div`
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
   height: 100%;
   width: 100%;
   p{
@@ -20,10 +20,9 @@ const StyledContact = styled.div`
     margin: 10px;
     padding: 10px;
     /* border: 1px solid blue; */
-  }
-  textarea{
+    outline: none;
     :focus{
-      border: 3px solid blue;
+      border: 3px solid tomato;
     }
   }
   .topContainer{

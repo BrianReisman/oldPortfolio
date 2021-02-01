@@ -11,7 +11,7 @@ return(
       <ul>
         {/* <NavLink exact to='/'>Home</NavLink> */}
         <NavLink to='/now'>Now</NavLink>
-        <NavLink to='/work'>Work</NavLink>
+        <NavLink to='/projects'>Projects</NavLink>
         <NavLink to='/contact'>Contact</NavLink>
       </ul>
     </nav>
