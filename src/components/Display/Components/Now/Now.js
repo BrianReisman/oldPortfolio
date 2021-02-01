@@ -20,21 +20,20 @@ const Now = (props) => {
 
       <ul>
         <li>
-          Finishing up my studies at a 6 month web dev and computer science
-          program
+          Finishing up my studies at a 6 month web dev program that I treated like grad school.
         </li>
         <li>
           Reading JavaScript: The Definitive Guide (currently on page 272, and
           just learned that in ES6 there is dynamic importing...?!)
-        </li>
-        {/* <li>Spending too much money adding to my 🍵tea tea library.</li> */}
-        <li>
           30 hours into a 40 hours course reinforcing React (including
           functional + class based components, custom hooks, async Redux)
         </li>
         <li>
           Working on an awesome 9 person team building a job board for Jr.
           JavaScript developers
+        </li>
+        <li>
+          Wireframing my first solo CRUD app
         </li>
         {/* <p>
           Thanks Derek Sivers for the idea to have this page... and start
@@ -44,11 +43,12 @@ const Now = (props) => {
       <ul>
         <p>Code is great but here are some other things I love:</p>
         <li>Theater</li>
+        <li>Any tea with toasted rice</li>
         <li>Days off while traveling</li>
         <li>Muji Pens</li>
         <li>
-          Day dreaming about when I can travel next, and fantasizing what a week
-          (...or 2) would look like{" "}
+          Fantasizing about what a week
+          (...or 2) would be like{" "}
           <a
             href="https://www.booking.com/hotel/ge/kazbegi-view.html"
             target="_blank"
@@ -70,7 +70,7 @@ const Now = (props) => {
       </ul>
 
       <ul>
-        <p>Here's what's next</p>
+        <p>What's next:</p>
         <li>Introducing myself to stictly typed languages with Typescript</li>
         <li>Deepending my testing knowledge with Jest</li>
       </ul>
@@ -79,3 +79,14 @@ const Now = (props) => {
 };
 
 export default Now;
+
+
+/*
+SIX QUESTIONS ANSWERED IN 6 WORDS (or less)
+1. What's next? Learn testing + typescript + {{?finding awesome job.?}}
+2. Any side projects going on for fun? What are you working on for fun? <a figma>Wireframe</a> = target. where it's at >>> ReadyBudgetGo.com.
+3. Problem I'm stuck on. Recreating useState in vanilla JavaScript. <a github>help</a>!
+4. What are you looking for in your next role? Remote, kind (balanaced?) culture, that /facilitates/values/emphasis(zing) on learning/growing
+5. Why tech? Teamwork, making, constant learning, 
+6. You started in theater?! From custom costumes to slinging code. // Think JavaScript is weird syntax? Try Shakespeare. // Confused by JavaScript? Try Shakespeare.
+*/
