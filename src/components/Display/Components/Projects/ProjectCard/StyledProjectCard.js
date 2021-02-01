@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 const StyledProjects = styled.div`
-  :hover {
+  /* :hover {
     h2 {
       color: tomato;
     }
-  }
+  } */
 
   box-sizing: border-box;
   /* height: 40vh; */

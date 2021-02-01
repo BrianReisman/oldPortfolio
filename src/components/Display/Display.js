@@ -13,13 +13,10 @@ const Display = (props) => {
 
   return (
     <StyledDisplay>
-      {/* <div className="top"> */}
       {/* <h1>static h1 on {history.location.pathname}</h1> */}
-      {/* </div> */}
       <Route exact path="/" component={Home} />
       <Route path="/now" component={Now} />
       <Route path="/projects" component={Projects} />
-
       <Route path="/contact" component={Contact} />
     </StyledDisplay>
   );
