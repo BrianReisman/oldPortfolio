@@ -8,7 +8,6 @@ import Icons from "../Icons/Icons";
 import {
   pageVariants,
   pageTransition,
-  pageStyle,
 } from "../../../../styles/animation";
 
 const Contact = (props) => {

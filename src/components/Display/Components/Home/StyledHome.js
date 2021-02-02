@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import headshot from "../../../../assets/images/BrianReismanlgcropped.jpg";
+import headshot from "../../../../assets/images/BrianReisman-compressed.jpg";
 
 const StyledHome = styled.div`
   /* * {
@@ -15,7 +15,6 @@ const StyledHome = styled.div`
   overflow-y: hidden;
   /* position: absolute; //*needed for framer motion */
 
-
   .photoContainer {
     background-image: url(${headshot});
     width: 100%;
@@ -26,22 +25,25 @@ const StyledHome = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* :after{
-      content: '➡';
-    } */
   }
+
+
   .arrow {
     border: solid black;
     border-width: 0 10px 10px 0;
+    border-radius: 5px;
     display: inline-block;
     padding: 10px;
     margin: 10px;
+    /* border: 1px dotted green; */
+    height: 40px;
+    width: 40px;
   }
   /* .rightArrow{
     transform: rotate(135deg);
     --webkit-transform: rotate(135deg);
   } */
-  .leftArrow {
+  .rightArrow {
     transform: rotate(-45deg);
     --webkit-transform: rotate(-45deg);
   }
@@ -50,8 +52,8 @@ const StyledHome = styled.div`
     /* border: 2px solid purple; */
     padding: 15px;
     margin: 10px;
-    :hover .leftArrow {
-      border: solid red;
+    :hover .rightArrow {
+      border: solid tomato;
       border-width: 0 10px 10px 0;
     }
   }

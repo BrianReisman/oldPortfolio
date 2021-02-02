@@ -12,9 +12,11 @@ import {
 
 const Home = (props) => {
   const history = useHistory();
+  console.log(history.length);
+  console.log(history.location.pathname);
 
   useEffect(() => {
-    if (history.length <= 2) {
+    if (history.length <= 3) {
       setTimeout(() => {
         props.history.push("/now");
       }, 3000);
@@ -41,8 +43,11 @@ const Home = (props) => {
           {/* <div className="arrowDiv"> */}
           {/* <i className="arrow rightArrow"></i> */}
           {/* </div> */}
+
+          {/* //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
           <div className="arrowDiv" onClick={rtArrow}>
-            <i className="leftArrow arrow">Now</i>
+            
+            <i className="rightArrow arrow"></i>
           </div>
         </div>
       </motion.div>

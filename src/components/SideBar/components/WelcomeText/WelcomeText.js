@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 //
 import StyledWelcomeText from './StyledWelcomeText';
@@ -11,7 +12,7 @@ return(
     <span className="accent"></span>
     <span className="accent"> </span>
     
-    <p className="name">I<span className="accent"><a href="/">'</a></span>m</p>
+    <p className="name">I<span className="accent"><NavLink to="/">'</NavLink></span>m</p>
     <p className="name">Brian</p>
     <p className="name">Reisman<span className="accent">,</span></p>
     <p>and I <s>break</s> make things for the web<span className="lastAccent">.</span></p>

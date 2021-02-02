@@ -12,7 +12,7 @@ export const pageVariants = {
   out: {
     opacity: 0,
     x: "100vw",
-    scale: 1.25,
+    scale: 0.75,
   },
 };
 

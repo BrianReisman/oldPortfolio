@@ -5,9 +5,9 @@ const StyledProjects = styled.div`
     height: 100vh;
     width: 100%;
   }
+  position: absolute; //*needed for framer motion
   /*//! overflow-x: hidden;
   overflow-y: hidden; */
-  position: absolute; //*needed for framer motion
 
   height: 100vh;
   width: 100%;

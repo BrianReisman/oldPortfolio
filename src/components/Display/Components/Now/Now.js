@@ -7,7 +7,6 @@ import Icons from "../Icons/Icons";
 import {
   pageVariants,
   pageTransition,
-  pageStyle,
 } from "../../../../styles/animation";
 
 const Now = (props) => {
@@ -39,9 +38,7 @@ const Now = (props) => {
           </li>
           <li>
             Reading JavaScript: The Definitive Guide (currently on page 272, and
-            just learned that in ES6 there is dynamic importing...?!) 30 hours
-            into a 40 hours course reinforcing React (including functional +
-            class based components, custom hooks, async Redux)
+            just learned that in ES6 there is dynamic importing...?!)
           </li>
           <li>
             Working on an awesome 9 person team building a job board for Jr.

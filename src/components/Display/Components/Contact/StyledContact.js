@@ -2,20 +2,22 @@ import styled from "styled-components";
 
 const StyledContact = styled.div`
   /* * {
-    border: 1px solid tomato;
   } */
+ 
+
   .motion {
-    height: 100vh;
+    /* background-color: red; */
+    height: 90vh; //! why can't this be 100vh like other display components?
     width: 100%;
   }
-  /* overflow-x: hidden;
-  overflow-y: hidden;
- */
+  position: absolute; //*needed for framer motion
 
-position: absolute; //*needed for framer motion
-
-  height: 100%;
+  /* border: 1px solid tomato; */
+  height: 100vh;
   width: 100%;
+  box-sizing: border-box;
+
+
   p {
     font-size: 1.6rem;
   }
