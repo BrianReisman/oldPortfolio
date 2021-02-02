@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
 const StyledProjects = styled.div`
+  .motion {
+    height: 100vh;
+  }
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+
   height: 100vh;
   /* background-color: black; */
   /* border: 3px solid tomato; */
