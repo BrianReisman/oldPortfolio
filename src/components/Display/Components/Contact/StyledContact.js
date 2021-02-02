@@ -6,11 +6,13 @@ const StyledContact = styled.div`
   } */
   .motion {
     height: 100vh;
+    width: 100%;
   }
-  overflow-x: hidden;
+  /* overflow-x: hidden;
   overflow-y: hidden;
+ */
 
-
+position: absolute; //*needed for framer motion
 
   height: 100%;
   width: 100%;

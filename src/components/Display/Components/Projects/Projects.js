@@ -14,7 +14,6 @@ const Projects = (props) => {
   return (
     <StyledProjects>
       <motion.div
-        style={pageStyle}
         className="motion"
         exit="out"
         animate="in"

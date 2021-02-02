@@ -22,7 +22,6 @@ const Contact = (props) => {
   return (
     <StyledContact>
       <motion.div
-        style={pageStyle}
         className="motion"
         exit="out"
         animate="in"

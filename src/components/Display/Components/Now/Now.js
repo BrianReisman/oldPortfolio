@@ -14,7 +14,6 @@ const Now = (props) => {
   return (
     <StyledNow>
       <motion.div
-        style={pageStyle}
         className="motion"
         exit="out"
         animate="in"

@@ -11,8 +11,8 @@ import Projects from "./Components/Projects/Projects";
 
 const Display = (props) => {
   const location = useLocation();
-  const history = useHistory();
-  console.log(history.location.pathname);
+  // const history = useHistory(); //*possible put arrows in display vs each component?
+  // console.log(history.location.pathname);
 
   return (
     <StyledDisplay>

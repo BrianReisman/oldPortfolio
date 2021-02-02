@@ -7,8 +7,10 @@ const StyledDisplay = styled.div`
     height: 100vh;
     width: 100%;
     position: relative; //for framer-motion
-    top: 0;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
   }
+
   flex: 1 1 65%;
   height: 100vh;
   display: flex;

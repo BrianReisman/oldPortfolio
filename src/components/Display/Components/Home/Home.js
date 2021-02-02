@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import {useHistory} from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
 //component;
 import StyledHome from "./StyledHome";
@@ -11,17 +11,20 @@ import {
 } from "../../../../styles/animation";
 
 const Home = (props) => {
-  const history = useHistory()
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     props.history.push("/work");
-  //   }, 3000);
-  // }, []);
+  const history = useHistory();
+
+  useEffect(() => {
+    if (history.length <= 2) {
+      setTimeout(() => {
+        props.history.push("/now");
+      }, 3000);
+    }
+  });
   //*without using useEffect I could try if(props.history.length > 1{...push()})
 
   const rtArrow = () => {
-    history.push('/now')
-  }
+    history.push("/now");
+  };
 
   return (
     <StyledHome>

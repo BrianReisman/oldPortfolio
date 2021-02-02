@@ -13,6 +13,8 @@ const StyledHome = styled.div`
   }
   overflow-x: hidden;
   overflow-y: hidden;
+  /* position: absolute; //*needed for framer motion */
+
 
   .photoContainer {
     background-image: url(${headshot});

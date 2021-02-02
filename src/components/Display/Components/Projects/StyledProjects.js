@@ -3,12 +3,14 @@ import styled from "styled-components";
 const StyledProjects = styled.div`
   .motion {
     height: 100vh;
+    width: 100%;
   }
-  overflow-x: hidden;
-  overflow-y: hidden;
-
+  /*//! overflow-x: hidden;
+  overflow-y: hidden; */
+  position: absolute; //*needed for framer motion
 
   height: 100vh;
+  width: 100%;
   /* background-color: black; */
   /* border: 3px solid tomato; */
   .projectRows {
