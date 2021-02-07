@@ -15,14 +15,14 @@ const Home = (props) => {
   console.log(history.length);
   console.log(history.location.pathname);
 
-  useEffect(() => {
-    if (history.length <= 3) {
-      setTimeout(() => {
-        props.history.push("/now");
-      }, 3000);
-    }
-  });
-  //*without using useEffect I could try if(props.history.length > 1{...push()})
+  // useEffect(() => {
+  //   if (history.length <= 3) {
+  //     setTimeout(() => {
+  //       props.history.push("/now");
+  //     }, 3000);
+  //   }
+  // });
+  // //*without using useEffect I could try if(props.history.length > 1{...push()})
 
   const rtArrow = () => {
     history.push("/now");

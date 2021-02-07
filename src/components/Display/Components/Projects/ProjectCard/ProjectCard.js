@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
             generation to generation so you can securely keep your recipes safe
             and on hand at all times! Create your free account at{" "}
             <a
-              href="https://family-recipes-ten.vercel.app/"
+              href="https://family-recipes-ten.vercel.app/signup"
               target="_blank"
               rel="noreferrer"
             >

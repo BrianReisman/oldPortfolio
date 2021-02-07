@@ -29,7 +29,7 @@ const Now = (props) => {
         </div>
         <ul>
           <li>
-            Finishing up my studies at a 6 month web dev program that I treated
+            Finishing up my studies at a 6 month web developement program that I'm treating
             like grad school.
           </li>
           <li>
@@ -117,12 +117,13 @@ const Now = (props) => {
 export default Now;
 
 /*
-SIX/SEVEN QUESTIONS ANSWERED IN 6/7 WORDS (or less)
+SEVEN[SHORT]  QUESTIONS ANSWERED IN 7 WORDS (or less)
 ?1. What are you doing now? Treating 6 month bootcamp like grad school
-2. What's next? Learn testing + typescript + {{?finding an awesome job.?}} //* find an awesome job + teach myself TDD/Typescript
+?2. What's next? find awesome job + teach myself TDD + Typescript
 3. Any side projects going on for fun? What are you working on for fun? <a figma>Wireframe</a> = target. where it's at >>> ReadyBudgetGo.com.
-4. Problem I'm stuck on: Recreating useState in vanilla JavaScript. <a github>help</a>!
+?4. What are you currently stumped on/about? Recreating useState in vanilla JavaScript. <a github>help</a>!
 5. What are you looking for in your next role? Remote, kind (balanaced?) culture, that /facilitates/values/emphasis(zing) on learning/growing
-6. Why tech? Teamwork, making, constant learning, 
-7. You started in theater?! From custom costumes to slinging code. //?Think JavaScript syntax is weird? Try Shakespeare.
+?6. Why tech? Teamwork, constant learning, making things [that work/with purpose/to help/]. 
+?7. You started in theater?!/You're background is acting in theater?//how does your background in theater Think JavaScript syntax is weird/confusing? Try Shakespeare.
+Closures?Hoisting?Redux?Aswitch statement?/itorators/generators?
 */
