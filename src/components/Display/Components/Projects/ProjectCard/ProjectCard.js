@@ -1,7 +1,7 @@
 import React from "react";
 import StyledProjects from "./StyledProjectCard";
 
-import image from "../../../../../assets/images/GitHub-Mark-32px.png";
+import image from "../../../../../assets/images/FamilyRecipeSignUp.png";
 
 const ProjectCard = (props) => {
   return (

@@ -36,7 +36,7 @@ const StyledNow = styled.div`
     font-size: 2.4rem;
   }
   ul{
-    border: 1px dotted blue;
+    /* border: 1px dotted blue; */
     /* height: 35%; */
     display: flex;
     flex-direction: column;

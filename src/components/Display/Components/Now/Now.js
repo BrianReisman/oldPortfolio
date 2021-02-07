@@ -17,7 +17,7 @@ const Now = (props) => {
         variants={pageVariants}
         transition={pageTransition}
       >
-        {/* <div className="containerNowTop">
+        <div className="containerNowTop">
           <p className="inline">Interested in what I've done? 👉</p>
           <span className="icons">
             <Icons />
@@ -29,57 +29,51 @@ const Now = (props) => {
         </div>
         <ul>
           <li>
-            Finishing up my studies at a 6 month web developement program that I'm treating
-            like grad school.
+            Finishing up my studies at a 6 month full-time full stack web
+            developement program that I'm treating like grad school.
           </li>
           <li>
-            Reading JavaScript: The Definitive Guide (currently on page 272, and
-            just learned that in ES6 there is dynamic importing...?!)
+            Reading JavaScript: The Definitive Guide (currently on page 276, and
+            just started learning about the Map class. Array? Object? What <em>are</em> you?!)
           </li>
-          <li>
+          {/* <li>
             Working on an awesome 9 person team building a job board for Jr.
             JavaScript developers
+          </li> */}
+          <li>
+            Wireframing my first solo CRUD app! A travel budget calculator Link
+            coming soon...
           </li>
-          <li>Wireframing my first solo CRUD app</li>
-          <p>
+          {/* <p>
           Thanks Derek Sivers for the idea to have this page... and start
           programming... and live life on my terms.
-        </p>
+        </p> */}
+          {/* <li>Reading Seth Godin's The Practice</li> */}
         </ul>
         <ul>
           <p>Code is great but here are some other things I love:</p>
           <li>Theater</li>
-          <li>Any tea with toasted rice</li>
-          <li>Days off while traveling</li>
-          <li>Muji Pens</li>
           <li>
-            Fantasizing about what a week (...or 2) would be like{" "}
-            <a
-              href="https://www.booking.com/hotel/ge/kazbegi-view.html"
-              target="_blank"
-              rel="noreferrer"
-            >
-              here
-            </a>{" "}
-            and{" "}
+            Travel + Days off while traveling (Frantasizing about{" "}
             <a
               href="https://www.alpacaexpeditions.com/inca-trail-expedition-5d4n/"
               target="_blank"
               rel="noreferrer"
             >
-              here
+              <em>this</em>
             </a>
-            .
+            !)
           </li>
-          <li>Reading Seth Godin's The Practice</li>
+          <li>Tea (especially with toasted rice or black pepper)</li>
+          <li>Muji Pens</li>
         </ul>
         <ul>
           <p>What's next:</p>
           <li>Introducing myself to stictly typed languages with Typescript</li>
           <li>Deepending my testing knowledge with Jest</li>
-        </ul> */}
+        </ul>
 
-        <ul>
+        {/* <ul>
           <h1>7 Questions Answered In 7 Words (or less)</h1>
           <ul>
             <li>
@@ -107,8 +101,8 @@ const Now = (props) => {
               7. You started in theater?! Think JavaScript syntax is weird? Try
               Shakespeare.
             </li>
-          </ul>
-        </ul>
+          </ul> */}
+        {/* </ul> */}
       </motion.div>
     </StyledNow>
   );
