@@ -12,7 +12,7 @@ const StyledSideBar = styled.div`
   flex-direction: column;
   height: 100vh;
   .name {
-    font-size: 6.4vw;
+    font-size: 6.8rem;
   }
   code {
     font-size: 1.6rem;
@@ -32,11 +32,22 @@ const StyledSideBar = styled.div`
   }
   .lastAccent {
     font-size: 3.5rem;
-    /* font-size: 3.5vw; */
     line-height: 0.75;
   }
 
-/* NAV */
+  /* WELCOME TEXT */
+  s {
+    text-decoration-color: tomato;
+  }
+  p a {
+    text-decoration: none;
+    color: tomato;
+  }
+  .welcome {
+    padding: 4% 4% 4% 8%;
+  }
+
+  /* NAV */
   nav {
     margin: 8px;
     padding: 8px;
@@ -69,64 +80,88 @@ const StyledSideBar = styled.div`
     opacity: 1;
   }
 
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
 
-
-  /* //? 1280 macBook 13inch*/
   @media (max-width: 1280px) {
-    background-color: teal;
-    /* .name {
-      font-size: 5rem;
+    background-color: white;
+  }
+  @media (max-width: 1025px) {
+    background-color: antiquewhite;
+  }
+  @media (max-width: 768px) {
+    background-color: white;
+  }
+  @media (max-width: 600px) {
+    background-color: antiquewhite;
+  }
+  @media (max-width: 360px) {
+    background-color: white;
+  }
+
+  /* //* 1280 macBook 13inch*/
+  @media (max-width: 1280px) { //!Teal
+    .name {
+      font-size: 6.8rem;
+      font-size: 8vw;
     }
-    .lastAccent {
-      font-size: 3rem;
-      line-height: 0.55;
-    }
-    p {
-      font-size: 1.6rem;
-    } */
-    code{
+    code {
       font-size: 1.45rem;
     }
+    ul a {
+      font-size: 1.75rem;
+      padding: 10px 1vw;
+      margin: 10px 5px;
+    }
   }
 
-  /*/ /* 975-1025 */
-  @media (max-width: 950px) {
-    background-color: white;
-    /* .name {
+  /*//* 1025 */
+  @media (max-width: 1025px) { //!seagreen
+    .lastAccent {
       font-size: 4rem;
+      line-height: 1vw;
     }
-    .lastAccent {
-      font-size: 2.75rem;
-      line-height: 0.45;
+
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    p {
-      font-size: 1.4rem;
-    } */
+
+    /* nav item text smaller */
+    ul a {
+      font-size: 1.6rem;
+      margin: 5px;
+      padding: 5px 5px;
+      border-radius: 13px 0 13px 0;
+      width: 50%;
+    }
   }
 
-  /*//* 768-800 */
-  @media (max-width: 768px) {
-    background-color: orange;
-    /* .name {
-      font-size: 3rem;
+  /*//* 768 */
+  @media (max-width: 768px) { //!Orange
+    ul a {
+      width: 75%;
     }
-    .lastAccent {
-      font-size: 2.5rem;
-      line-height: 0.25;
+    code {
+      font-size: 1.25rem;
     }
-    p {
-      font-size: 1.2rem;
-    } */
+
   }
 
-  /*//* /<600 */
-  @media (max-width: 600px) {
-    background-color: red;
+  /*//* 600 */
+  @media (max-width: 600px) { //!red
   }
 
   /* //*360 Samsung viewport portrail */
-  @media (max-width: 360px){
-    background-color: black;
+  @media (max-width: 360px) { //!black
   }
 `;
 export default StyledSideBar;
