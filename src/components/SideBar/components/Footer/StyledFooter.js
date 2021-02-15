@@ -10,8 +10,5 @@ const StyledFooter = styled.div`
   flex: 1 1 35%;
   text-align: center;
   font-weight: bold;
-  code {
-    font-size: 1.6rem;
-  }
 `;
 export default StyledFooter;

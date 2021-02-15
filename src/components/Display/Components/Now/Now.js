@@ -70,7 +70,8 @@ const Now = (props) => {
         <ul>
           <p>What's next:</p>
           <li>Introducing myself to stictly typed languages with Typescript</li>
-          <li>Deepending my testing knowledge with Jest</li>
+          <li>Deepening my testing knowledge with Jest</li>
+          <li>Building on my backend stack with Next.js</li>
         </ul>
 
         {/* <ul>
