@@ -15,10 +15,19 @@ const StyledSideBar = styled.div`
   }
   code {
     font-size: 1.6rem;
+    position: fixed;
+    bottom: 0;
+    width: 35%;
+    padding: 0 1% 0.5% 1%;
+    text-align: center;
   }
   p {
     font-size: 2rem;
     font-size: 2vw;
+  }
+  .accent,
+  .lastAccent {
+    color: tomato;
   }
   .lastAccent {
     font-size: 3.5rem;
@@ -39,21 +48,6 @@ const StyledSideBar = styled.div`
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /* //* 1280
   @media (max-width: 1280px) {
     .name {
@@ -68,7 +62,7 @@ const StyledSideBar = styled.div`
     }
   }
 
-  /*//* 975-1025 */
+  /*/ /* 975-1025 */
   /* @media (max-width: 950px) {
     .name {
       font-size: 4rem;
