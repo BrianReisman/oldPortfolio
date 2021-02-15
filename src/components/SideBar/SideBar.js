@@ -14,6 +14,7 @@ export default function SideBar() {
       <WelcomeText />
       <Nav />
       <Footer />
+      
     </StyledSideBar>
   );
 }

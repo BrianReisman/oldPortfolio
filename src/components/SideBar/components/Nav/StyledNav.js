@@ -1,26 +1,6 @@
 import styled from "styled-components";
 
 const StyledNav = styled.div`
-  /* border: 1px solid blue; */
-  nav {
-    /* border: 1px solid blue; */
-  }
-  nav ul {
-    /* border: 1px solid blue; */
-  }
-  nav ul a {
-    /* border: 1px solid blue; */
-  }
-
-  nav {
-    margin: 8px;
-    padding: 8px;
-  /* padding: 5px */
-  }
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-  }
   a {
     font-size: 2rem;
     margin: 10px;
@@ -30,15 +10,19 @@ const StyledNav = styled.div`
     text-decoration: none;
     color: tomato;
     text-align: center;
-    transition-duration: .15s;
+    transition-duration: 0.172s;
     :hover {
       background-color: tomato;
       color: white;
+      opacity: 0.75;
     }
   }
   .active {
     background-color: tomato;
     color: white;
+  }
+  :hover a.active {
+    opacity: 1;
   }
 `;
 export default StyledNav;

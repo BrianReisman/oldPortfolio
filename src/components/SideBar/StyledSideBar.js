@@ -26,6 +26,34 @@ const StyledSideBar = styled.div`
     line-height: 0.75;
   }
 
+  nav {
+    margin: 8px;
+    padding: 8px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* //* 1280
   @media (max-width: 1280px) {
     .name {
