@@ -5,6 +5,7 @@ const StyledSideBar = styled.div`
     /* border: 1px solid tomato; */
   }
   background-color: antiquewhite;
+
   width: 35%;
   display: flex;
   justify-content: center;
@@ -35,6 +36,7 @@ const StyledSideBar = styled.div`
     line-height: 0.75;
   }
 
+/* NAV */
   nav {
     margin: 8px;
     padding: 8px;
@@ -43,14 +45,36 @@ const StyledSideBar = styled.div`
     display: flex;
     justify-content: space-around;
   }
+  ul a {
+    font-size: 2rem;
+    margin: 10px;
+    padding: 10px 0;
+    border-radius: 13px 0 13px 0;
+    width: 100%;
+    text-decoration: none;
+    color: tomato;
+    text-align: center;
+    transition-duration: 0.172s;
+    :hover {
+      background-color: tomato;
+      color: white;
+      opacity: 0.75;
+    }
+  }
+  ul .active {
+    background-color: tomato;
+    color: white;
+  }
+  :hover ul a.active {
+    opacity: 1;
+  }
 
 
 
-
-
-  /* //* 1280
+  /* //? 1280 macBook 13inch*/
   @media (max-width: 1280px) {
-    .name {
+    background-color: teal;
+    /* .name {
       font-size: 5rem;
     }
     .lastAccent {
@@ -59,12 +83,16 @@ const StyledSideBar = styled.div`
     }
     p {
       font-size: 1.6rem;
+    } */
+    code{
+      font-size: 1.45rem;
     }
   }
 
   /*/ /* 975-1025 */
-  /* @media (max-width: 950px) {
-    .name {
+  @media (max-width: 950px) {
+    background-color: white;
+    /* .name {
       font-size: 4rem;
     }
     .lastAccent {
@@ -73,12 +101,13 @@ const StyledSideBar = styled.div`
     }
     p {
       font-size: 1.4rem;
-    }
-  } */
+    } */
+  }
 
   /*//* 768-800 */
-  /* @media (max-width: 768px) {
-    .name {
+  @media (max-width: 768px) {
+    background-color: orange;
+    /* .name {
       font-size: 3rem;
     }
     .lastAccent {
@@ -87,12 +116,17 @@ const StyledSideBar = styled.div`
     }
     p {
       font-size: 1.2rem;
-    }
-  } */
+    } */
+  }
 
   /*//* /<600 */
   @media (max-width: 600px) {
     background-color: red;
+  }
+
+  /* //*360 Samsung viewport portrail */
+  @media (max-width: 360px){
+    background-color: black;
   }
 `;
 export default StyledSideBar;

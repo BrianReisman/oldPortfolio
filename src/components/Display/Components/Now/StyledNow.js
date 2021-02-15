@@ -41,7 +41,7 @@ const StyledNow = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1vw;
+    /* font-size: 1vw; */
   }
   li {
     flex: 1 1 0;
