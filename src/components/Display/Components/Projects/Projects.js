@@ -24,12 +24,12 @@ const Projects = (props) => {
         <div className="grid">
           <div className="projectRows">
             <ProjectCard num="1" />
-            {/* <ProjectCard num="2" /> */}
+            <ProjectCard num="2" />
           </div>
-          {/* <div className="projectRows">
+          <div className="projectRows">
           <ProjectCard num="3" />
           <ProjectCard num="4" />
-        </div> */}
+        </div>
         </div>
       </motion.div>
     </StyledProjects>

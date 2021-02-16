@@ -1,23 +1,25 @@
 import styled from "styled-components";
 
 const StyledProjects = styled.div`
-  /* :hover {
-    h2 {
-      color: tomato;
-    }
-  } */
-
-  box-sizing: border-box;
-  /* height: 40vh; */
-  width: 50%;
-  border: 1px solid #eee;
-  box-shadow: 2px 3px 10px;
-  padding: 5px;
   * {
     /* border: 1px dotted red; */
   }
+
+  
+  :hover {
+    h2 {
+      color: tomato;
+    }
+  }
+
+  box-sizing: border-box;
+  width: 50%;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 3px;
+  padding: 5px;
+  margin: 10px;
   img {
-    width: 100%;
+    width: 80%;
   }
   h2 {
     font-size: 3.5rem;
@@ -33,13 +35,14 @@ const StyledProjects = styled.div`
   }
 
   .imgRow {
-    display: flex;
+    display: block;
+    text-align: center;
   }
   .imgRow .img {
-    flex: 1;
+    /* flex: 1; */
   }
   .imgRow .textDiv {
-    flex: 1;
+    /* flex: 1; */
   }
 `;
 export default StyledProjects;
