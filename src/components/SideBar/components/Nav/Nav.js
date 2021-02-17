@@ -7,7 +7,7 @@ const Nav = (props) => {
     <StyledNav>
       <ul>
         {/* <NavLink exact to='/'>Home</NavLink> */}
-        <NavLink to="/now">Now</NavLink>
+        <NavLink to="/me">Me</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </ul>

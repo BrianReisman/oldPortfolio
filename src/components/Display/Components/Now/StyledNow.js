@@ -15,6 +15,15 @@ const StyledNow = styled.div`
   * {
     /* border: 1px solid tomato; */
   }
+  ol{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+  }
+  h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+  }
   .containerNowTop {
     text-align: center;
     p {
@@ -28,9 +37,9 @@ const StyledNow = styled.div`
     }
   }
   p {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
-  ul {
+  ol {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,11 +59,11 @@ const StyledNow = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
-    ul p {
+    ol p {
       margin: 0;
       font-size: 2rem;
     }
-    ul li {
+    ol li {
       margin: 15px 50px;
       font-size: 1.35em;
     }

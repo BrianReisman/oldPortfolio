@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 const StyledSideBar = styled.div`
   * {
-    /* border: 1px solid tomato; */
+    /* border: 1px solid ${props => props.theme.accent}; */
   }
-  background-color: antiquewhite;
+  background-color: ${props => props.theme.backgroundColor};
 
   width: 35%;
   display: flex;
@@ -28,7 +28,7 @@ const StyledSideBar = styled.div`
   }
   .accent,
   .lastAccent {
-    color: tomato;
+    color: ${props => props.theme.accent};
   }
   .lastAccent {
     font-size: 3.5rem;
@@ -37,11 +37,11 @@ const StyledSideBar = styled.div`
 
   /* WELCOME TEXT */
   s {
-    text-decoration-color: tomato;
+    text-decoration-color: ${props => props.theme.accent};
   }
   p a {
     text-decoration: none;
-    color: tomato;
+    color: ${props => props.theme.accent};
   }
   .welcome {
     padding: 4% 4% 4% 8%;
@@ -63,17 +63,17 @@ const StyledSideBar = styled.div`
     border-radius: 13px 0 13px 0;
     width: 100%;
     text-decoration: none;
-    color: tomato;
+    color: ${props => props.theme.accent};
     text-align: center;
     transition-duration: 0.172s;
     :hover {
-      background-color: tomato;
+      background-color: ${props => props.theme.accent};
       color: white;
       opacity: 0.75;
     }
   }
   ul .active {
-    background-color: tomato;
+    background-color: ${props => props.theme.accent};
     color: white;
   }
   :hover ul a.active {

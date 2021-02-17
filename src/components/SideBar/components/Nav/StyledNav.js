@@ -21,7 +21,8 @@ const StyledNav = styled.nav`
       transition-duration: 0.172s;
       :hover {
         background-color: ${(props) => props.theme.accent};
-        opacity: 0.75;
+        opacity: 0.7;
+        color: ${props => props.theme.backgroundColor};
         &.active {
           opacity: 1;
         }

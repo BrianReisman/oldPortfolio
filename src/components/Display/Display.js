@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Route, Switch, useHistory, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
@@ -9,10 +9,28 @@ import Now from "./Components/Now/Now";
 import Contact from "./Components/Contact/Contact";
 import Projects from "./Components/Projects/Projects";
 
+
+import Modal from "./Components/Now/Modal/Modal";
+
+
+
+
+
+
+
+
+
 const Display = (props) => {
+  const [showModal, setShowModal] = useState(false);
   const location = useLocation();
   const history = useHistory(); //*possible put arrows in display vs each component?
   console.log(history.location.pathname);
+
+  const modalClickHandler = () => {
+  
+    setShowModal(!showModal);
+    
+  };
 
   return (
     <StyledDisplay>
@@ -29,9 +47,12 @@ const Display = (props) => {
               <i className="arrow rightArrow"></i>
             </div>
           </div> */}
+          {/* <Modal display={showModal}/> */}
+
           <Switch location={location} key={location.pathname}>
             <Route exact path="/" component={Home} />
-            <Route path="/now" component={Now} />
+            <Route path="/me" render={()=>{
+              return <Now modalClickHandler={modalClickHandler}/>}}/>
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
           </Switch>
