@@ -8,7 +8,7 @@ import Icons from "../Icons/Icons";
 import {
   pageVariants,
   pageTransition,
-} from "../../../../styles/animation";
+} from "../../../../animation/animation";
 
 const Contact = (props) => {
   const btnClickHandler = (e) => {
@@ -45,7 +45,7 @@ const Contact = (props) => {
         </div>
 
         <form action="MAILTO:'brianreisman@protonmail.com'">
-          <p className="centerText">For anything else 👇</p>
+          <p className="centerText">For anything else feel free to 🎙💬 ask me 👇</p>
           <label htmlFor="name">
             {/* {"Name"} */}
             <input type="text" id="name" placeholder="name" />
@@ -60,8 +60,6 @@ const Contact = (props) => {
             <textarea
               id="message"
               placeholder="Messages written in verse will be replied to first."
-              cols="80"
-              rows="8"
             />
           </label>
           <button onClick={btnClickHandler}>

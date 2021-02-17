@@ -3,9 +3,12 @@
 // keys are CSS properties
 // values are values for those properties
 
+import "./colors.css"; //*if I want color highlighter for picker
+
 export const theme = {
-  accent: "tomato",
-  backgroundColor: "antiquewhite",
+  accent: "var(--accent)",
+  backgroundColor: "var(--backgroundColor)",
+  highlight: "var(--highlight)",
   breakpoints: {
     1: "1440px" /* 1440 - desktop */,
     2: "1280px" /* 1280 - laptop */,
@@ -15,6 +18,9 @@ export const theme = {
     6: "375px" /* 375 -Mobile Med, stack*/,
     7: "320px" /* 320 -Mobile Small, stack*/,
   },
+  fonts: {
+    text: '2vw',
+  }
 };
 
 // TWO ways to use

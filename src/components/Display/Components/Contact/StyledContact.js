@@ -1,25 +1,23 @@
 import styled from "styled-components";
 
 const StyledContact = styled.div`
-  /* * {
-  } */
- 
-
   .motion {
     /* background-color: red; */
-    height: 90vh; //! why can't this be 100vh like other display components?
+    height: 95vh; //! why not 100vh like other components in display?
     width: 100%;
   }
   position: absolute; //*needed for framer motion
 
-  /* border: 1px solid tomato; */
+  * {
+    /* border: 1px solid tomato; */
+  }
+
   height: 100vh;
   width: 100%;
   box-sizing: border-box;
 
-
   p {
-    font-size: 1.6rem;
+    font-size: ${props => props.theme.fonts.text};
   }
   a {
     color: tomato;
@@ -37,8 +35,16 @@ const StyledContact = styled.div`
     /* border: 1px solid blue; */
     outline: none;
     :focus {
-      border: 3px solid tomato;
+      border: 1px solid tomato;
     }
+  }
+  textarea {
+    height: 135px;
+    width: 750px;
+
+  }
+  form{
+    /* margin-top: 15vh; */
   }
   .topContainer {
     display: flex;
@@ -52,6 +58,9 @@ const StyledContact = styled.div`
   }
   .inline {
     display: inline;
+
+    @media (max-width: ${(props) => props.theme.breakpoints[0]}) {
+    }
   }
 `;
 export default StyledContact;

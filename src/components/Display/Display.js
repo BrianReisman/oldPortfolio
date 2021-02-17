@@ -10,7 +10,7 @@ import Contact from "./Components/Contact/Contact";
 import Projects from "./Components/Projects/Projects";
 
 
-import Modal from "./Components/Now/Modal/Modal";
+// import Modal from "./Components/Now/Modal/Modal";
 
 
 

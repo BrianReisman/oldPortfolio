@@ -1,11 +1,11 @@
 import React from "react";
-import StyledProjects from "./StyledProjectCard";
+import StyledProjectCard from "./StyledProjectCard";
 
 import image from "../../../../../assets/images/FamilyRecipeSignUp.png";
 
 const ProjectCard = (props) => {
   return (
-    <StyledProjects>
+    <StyledProjectCard>
       <h2>Family Recipe Keeper</h2>
       <div className="imgRow">
         <img src={image} alt="iamge of project" />
@@ -33,7 +33,7 @@ const ProjectCard = (props) => {
           </p>
         </div>
       </div>
-    </StyledProjects>
+    </StyledProjectCard>
   );
 };
 

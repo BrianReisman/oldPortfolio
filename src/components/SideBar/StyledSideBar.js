@@ -23,7 +23,6 @@ const StyledSideBar = styled.div`
     text-align: center;
   }
   p {
-    font-size: 2rem;
     font-size: 2vw;
   }
   .accent,
@@ -46,39 +45,6 @@ const StyledSideBar = styled.div`
   .welcome {
     padding: 4% 4% 4% 8%;
   }
-
-  /* NAV */
-  /* nav {
-    margin: 8px;
-    padding: 8px;
-  }
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  ul a {
-    font-size: 2rem;
-    margin: 10px;
-    padding: 10px 0;
-    border-radius: 13px 0 13px 0;
-    width: 100%;
-    text-decoration: none;
-    color: ${props => props.theme.accent};
-    text-align: center;
-    transition-duration: 0.172s;
-    :hover {
-      background-color: ${props => props.theme.accent};
-      color: white;
-      opacity: 0.75;
-    }
-  }
-  ul .active {
-    background-color: ${props => props.theme.accent};
-    color: white;
-  }
-  :hover ul a.active {
-    opacity: 1;
-  } */
 
   /* Media Queries */
   /* Media Queries */

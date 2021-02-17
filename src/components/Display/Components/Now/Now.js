@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 //
 import StyledNow from "./StyledNow";
 import Icons from "../Icons/Icons";
-import { pageVariants, pageTransition } from "../../../../styles/animation";
+import { pageVariants, pageTransition } from "../../../../animation/animation";
 
 const Now = (props) => {
   return (
@@ -18,27 +18,33 @@ const Now = (props) => {
         transition={pageTransition}
       >
         <div className="containerNowTop">
-          <p className="inline">Interested in what I've done? 👉</p>
+          <p className="inline">
+            Interested in what I've <>done</>? 👉
+          </p>
           <span className="icons">
             <Icons />
           </span>
           <p>
             {" "}
             {/* Here's what I'm <em>doing</em>. 👇 */}
-            Here's a bit about me<em></em>. 👇
+            {/* Here's a bit about me in 7 questions answered in 7 words (or less) */}
+            <em></em>
+            {/* 👇 */}
           </p>
           {/* {/* <button onClick={props.modalClickHandler}>show modal</button> */}
         </div>
+
         <div>
           <div>
-            <h1>7 Questions Answered In 7 Words (or less)</h1>
+            {/* <h1>7 Questions Answered In 7 Words (or less)</h1> */}
+            <h1>7 questions answered in 7 words (or less)</h1>
             <ol>
               <li>
                 <strong>What are you doing now?</strong>
               </li>
               <p>Treating 6 month bootcamp like grad school</p>
               <li>What's next?</li>
-              <p>Finding awesome job + learning TDD, TypeScript, and PHP.</p>
+              <p>Finding awesome job + practicing TDD + learning PHP.</p>
               {/* <li>
                 3. Any side projects you're working onfor fun? My target >
                 Wireframe. My progress > ReadyBudgetGo.com.
@@ -47,21 +53,27 @@ const Now = (props) => {
             4. Problem I'm stuck on: Recreating useState in vanilla JavaScript.{" "}
             <a github>help</a>!
           </li> */}
-              <li>What are you looking for in your next role?</li>
-              <p>
-                Remote, kind (balanaced?) culture, that
-                /facilitates/values/emphasis(zing) on learning/growing
-              </p>
-              <li>Why tech? </li>
-              <p>
+
+              <li>What are you looking for in your next role and company?</li>
+              <p>Growth mindest, learning opportunities, ______, and remote.</p>
+
+              <li>Why drew you to tech?</li>
+              {/* <p>
                 Teamwork, constant learning, making things, solving problems
-              </p>
+              </p> */}
+              <p>Solving problems by constant learning, teamwork, + creating</p>
               <li>I get you love programming, what else?</li>
               <p>Theater, Travel, Tea, and Muji Pens</p>
               <li>Any travel in particular on your mind?</li>
-              <p>Thank you for asking! Fantasizing about <a href="#"><em>this</em></a></p>
+              <p>
+                Thank you for asking! Fantasizing about{" "}
+                <a href="#">
+                  <em>this</em>.
+                </a>
+              </p>
               <li>You started in theater?!</li>
-              <p>Think Closures are trippy? Try Shakespeare.</p>
+              <p>Think closures are heady? Try Shakespeare.</p>
+              {/* <p>Think closures can be ____? Try Shakespeare.</p> */}
               {/* <p>Thrown by generator functions? Try Shakespeare.</p> */}
             </ol>
           </div>

@@ -7,7 +7,7 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 import {
   pageVariants,
   pageTransition,
-} from "../../../../styles/animation";
+} from "../../../../animation/animation";
 
 const Projects = (props) => {
   return (

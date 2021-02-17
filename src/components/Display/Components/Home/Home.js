@@ -8,7 +8,7 @@ import {
   pageVariants,
   pageTransition,
   pageStyle,
-} from "../../../../styles/animation";
+} from "../../../../animation/animation";
 
 const Home = (props) => {
   const history = useHistory();
@@ -16,7 +16,7 @@ const Home = (props) => {
   console.log(history.location.pathname);
 
   const rtArrow = () => {
-    history.push("/now");
+    history.push("/me");
   };
 
   return (

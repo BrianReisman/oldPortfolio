@@ -15,43 +15,41 @@ const StyledNow = styled.div`
   * {
     /* border: 1px solid tomato; */
   }
-  ol{
-    list-style-type: upper-roman;
-    list-style-position: inside;
-  }
-  h1{
+
+  h1 {
     font-size: 2.4rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-align: center;
   }
   .containerNowTop {
     text-align: center;
     p {
       margin: 0.5%;
+      font-size: 2rem;
     }
-    .inline {
-      display: inline-block;
-    }
+    .inline,
     .icons {
       display: inline-block;
     }
-  }
-  p {
-    font-size: 2rem;
   }
   ol {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    list-style-type: upper-roman;
+    list-style-position: inside;
     p {
-      padding-left: 7px;
+      /* border: 1px solid burlywood; */
+      font-size: 1.7rem;
+      margin: 0px 50px 0px 75px;
     }
     li {
-      flex: 1 1 0;
+      /* border: 1px solid blue; */
       font-size: 1.5em;
-      border-left: 4.5px solid ${(props) => props.theme.accent};
+      border-left: 4.25px solid ${(props) => props.theme.accent};
       margin: 15px 50px;
-      padding: 0 0.5% 0.75% 0.5%;
+      padding: 0.5% 0.5% 0.75% 0.5%;
+      background-color: ${(props) => props.theme.highlight};
     }
   }
   em {
@@ -59,13 +57,28 @@ const StyledNow = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
-    ol p {
-      margin: 0;
+    ol {
+      p {
+        /* border: 1px solid burlywood; */
+        font-size: 1.4rem;
+        margin: 0px 50px 0px 75px;
+      }
+      li {
+        font-size: 1.4em;
+        border-left: 4.25px solid ${(props) => props.theme.accent};
+        margin: 15px 50px;
+        padding: 0 0.5% 0.75% 0.5%;
+        background-color: ${(props) => props.theme.highlight};
+      }
+    }
+    h1 {
       font-size: 2rem;
     }
-    ol li {
-      margin: 15px 50px;
-      font-size: 1.35em;
+    .containerNowTop {
+      p {
+        margin: 0.5%;
+        font-size: 1.75rem;
+      }
     }
   }
 `;
