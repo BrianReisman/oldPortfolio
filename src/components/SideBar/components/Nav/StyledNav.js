@@ -22,7 +22,7 @@ const StyledNav = styled.nav`
       :hover {
         background-color: ${(props) => props.theme.accent};
         opacity: 0.7;
-        color: ${props => props.theme.backgroundColor};
+        color: ${(props) => props.theme.backgroundColor};
         &.active {
           opacity: 1;
         }
@@ -34,9 +34,9 @@ const StyledNav = styled.nav`
     }
   }
 
-
   /* //* 1280 macBook 13inch*/
-  @media (max-width: 1280px) { //!Teal
+  @media (max-width: 1280px) {
+    //!Teal
     ul a {
       font-size: 1.75rem;
       padding: 10px 1vw;
@@ -45,8 +45,13 @@ const StyledNav = styled.nav`
   }
 
   /*//* 1024 */
-  @media (max-width: 1024px) { //!seagreen
-    nav ul {
+  @media (max-width: 1024px) {
+    //!seagreen
+    *{
+    }
+    ul {
+      /* border: 1px solid blue; */
+      margin-right: 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -58,24 +63,26 @@ const StyledNav = styled.nav`
       margin: 5px;
       padding: 5px 5px;
       border-radius: 13px 0 13px 0;
-      width: 50%;
+      /* width: 50%; */
     }
   }
 
   /*//* 768 --- TOP */
-  @media (max-width: 768px) { //!Orange
+  @media (max-width: 768px) {
+    //!Orange
     ul a {
       width: 75%;
     }
   }
 
   /*//* 600 */
-  @media (max-width: 600px) { //!red
+  @media (max-width: 600px) {
+    //!red
   }
 
   /* //*360 Samsung viewport portrail */
-  @media (max-width: 360px) { //!black
+  @media (max-width: 360px) {
+    //!black
   }
-
 `;
 export default StyledNav;

@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 const StyledContact = styled.div`
+display: flex;
+align-items: center;
   .motion {
     /* background-color: red; */
-    height: 95vh; //! why not 100vh like other components in display?
+    height: 75vh; //! why not 100vh like other components in display?
     width: 100%;
   }
   position: absolute; //*needed for framer motion
@@ -17,7 +19,7 @@ const StyledContact = styled.div`
   box-sizing: border-box;
 
   p {
-    font-size: ${props => props.theme.fonts.text};
+    font-size: ${(props) => props.theme.fonts.text};
   }
   a {
     color: tomato;
@@ -41,9 +43,8 @@ const StyledContact = styled.div`
   textarea {
     height: 135px;
     width: 750px;
-
   }
-  form{
+  form {
     /* margin-top: 15vh; */
   }
   .topContainer {
@@ -58,8 +59,11 @@ const StyledContact = styled.div`
   }
   .inline {
     display: inline;
-
-    @media (max-width: ${(props) => props.theme.breakpoints[0]}) {
+  }
+  @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
+    textarea {
+      height: 150px;
+      width: 600px;
     }
   }
 `;
