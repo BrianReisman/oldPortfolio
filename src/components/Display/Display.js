@@ -17,14 +17,33 @@ const Display = (props) => {
   return (
     <StyledDisplay>
       {/* <h1>static h1 on {history.location.pathname}</h1> */}
+
       <main>
         <AnimatePresence>
+          {/* <div className='arrows'>
+            <div className="arrowDiv">
+              <i className="arrow leftArrow"></i>
+            </div>
+
+            <div className="arrowDiv">
+              <i className="arrow rightArrow"></i>
+            </div>
+          </div> */}
           <Switch location={location} key={location.pathname}>
             <Route exact path="/" component={Home} />
             <Route path="/now" component={Now} />
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
           </Switch>
+          {/* <div className='arrows'> */}
+          {/* <div className="arrowDiv">
+              <i className="arrow leftArrow"></i>
+            </div> */}
+
+          {/* <div className="arrowDiv"> */}
+          {/* <i className="arrow rightArrow"></i> */}
+          {/* </div> */}
+          {/* </div> */}
         </AnimatePresence>
       </main>
     </StyledDisplay>

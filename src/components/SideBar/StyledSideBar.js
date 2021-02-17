@@ -48,7 +48,7 @@ const StyledSideBar = styled.div`
   }
 
   /* NAV */
-  nav {
+  /* nav {
     margin: 8px;
     padding: 8px;
   }
@@ -78,33 +78,37 @@ const StyledSideBar = styled.div`
   }
   :hover ul a.active {
     opacity: 1;
+  } */
+
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+  /* Media Queries */
+
+  //1440+ antiquwhite.
+  @media (max-width: 1440px) {
+    background-color: lightcyan;
   }
-
-  /* Media Queries */
-  /* Media Queries */
-  /* Media Queries */
-  /* Media Queries */
-  /* Media Queries */
-  /* Media Queries */
-  /* Media Queries */
-  /* Media Queries */
-  /* Media Queries */
-
   @media (max-width: 1280px) {
-    background-color: white;
+    background-color: lightgoldenrodyellow;
   }
-  @media (max-width: 1025px) {
-    background-color: antiquewhite;
+  @media (max-width: 1024px) {
+    background-color: blue;
   }
   @media (max-width: 768px) {
+    background-color: black;
+  }
+  @media (max-width: 667px) {
+    background-color: black;
+  }
+  /* @media (max-width: 360px) {
     background-color: white;
-  }
-  @media (max-width: 600px) {
-    background-color: antiquewhite;
-  }
-  @media (max-width: 360px) {
-    background-color: white;
-  }
+  } */
 
   /* //* 1280 macBook 13inch*/
   @media (max-width: 1280px) { //!Teal
@@ -122,8 +126,8 @@ const StyledSideBar = styled.div`
     }
   }
 
-  /*//* 1025 */
-  @media (max-width: 1025px) { //!seagreen
+  /*//* 1024 */
+  @media (max-width: 1024px) { //!seagreen
     .lastAccent {
       font-size: 4rem;
       line-height: 1vw;
@@ -145,7 +149,7 @@ const StyledSideBar = styled.div`
     }
   }
 
-  /*//* 768 */
+  /*//* 768 --- TOP */
   @media (max-width: 768px) { //!Orange
     ul a {
       width: 75%;
@@ -156,12 +160,5 @@ const StyledSideBar = styled.div`
 
   }
 
-  /*//* 600 */
-  @media (max-width: 600px) { //!red
-  }
-
-  /* //*360 Samsung viewport portrail */
-  @media (max-width: 360px) { //!black
-  }
 `;
 export default StyledSideBar;

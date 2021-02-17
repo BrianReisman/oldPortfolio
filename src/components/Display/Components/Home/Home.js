@@ -15,15 +15,6 @@ const Home = (props) => {
   console.log(history.length);
   console.log(history.location.pathname);
 
-  // useEffect(() => {
-  //   if (history.length <= 3) {
-  //     setTimeout(() => {
-  //       props.history.push("/now");
-  //     }, 3000);
-  //   }
-  // });
-  // //*without using useEffect I could try if(props.history.length > 1{...push()})
-
   const rtArrow = () => {
     history.push("/now");
   };
@@ -40,14 +31,14 @@ const Home = (props) => {
         transition={pageTransition}
       >
         <div className="photoContainer">
-          {/* <div className="arrowDiv"> */}
-          {/* <i className="arrow rightArrow"></i> */}
-          {/* </div> */}
+          {/* <div> */}
+            <div className="arrowDiv">
+              <i className="arrow leftArrow"></i>
+            </div>
 
-          {/* //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
-          <div className="arrowDiv" onClick={rtArrow}>
-            
-            <i className="rightArrow arrow"></i>
+            <div className="arrowDiv" onClick={rtArrow}>
+              <i className="arrow rightArrow"></i>
+            {/* </div> */}
           </div>
         </div>
       </motion.div>

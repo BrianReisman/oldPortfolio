@@ -115,10 +115,11 @@ export default Now;
 SEVEN[SHORT]  QUESTIONS ANSWERED IN 7 WORDS (or less)
 ?1. What are you doing now? Treating 6 month bootcamp like grad school
 ?2. What's next? find awesome job + teach myself TDD + Typescript
+?2. What's next? find awesome job + learning TDD, Typescript, PHP.
 3. Any side projects going on for fun? What are you working on for fun? <a figma>Wireframe</a> = target. where it's at >>> ReadyBudgetGo.com.
 ?4. What are you currently stumped on/about? Recreating useState in vanilla JavaScript. <a github>help</a>!
 5. What are you looking for in your next role? Remote, kind (balanaced?) culture, that /facilitates/values/emphasis(zing) on learning/growing
-?6. Why tech? Teamwork, constant learning, making things [that work/with purpose/to help/]. 
+?6. Why tech? Teamwork, constant learning, making things [that work/with purpose/to help/], solving problems.
 ?7. You started in theater?!/You're background is acting in theater?//how does your background in theater Think JavaScript syntax is weird/confusing? Try Shakespeare.
 Closures?Hoisting?Redux?Aswitch statement?/itorators/generators?
 */

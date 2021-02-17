@@ -2,10 +2,10 @@ import styled from "styled-components";
 import headshot from "../../../../assets/images/BrianReisman-compressed.jpg";
 
 const StyledHome = styled.div`
-  /* * {
-    border: 1px solid blue;
-  } */
-  flex: 1 1 65%;
+  * {
+    /* border: 1px solid blue; */
+  }
+  /* flex: 1 1 65%; */
 
   .motion {
     height: 100vh;
@@ -17,16 +17,16 @@ const StyledHome = styled.div`
 
   .photoContainer {
     background-image: url(${headshot});
+    background-position: center center;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
   }
-
 
   .arrow {
     border: solid black;
@@ -39,10 +39,10 @@ const StyledHome = styled.div`
     height: 40px;
     width: 40px;
   }
-  /* .rightArrow{
+  .leftArrow {
     transform: rotate(135deg);
     --webkit-transform: rotate(135deg);
-  } */
+  }
   .rightArrow {
     transform: rotate(-45deg);
     --webkit-transform: rotate(-45deg);
@@ -52,9 +52,26 @@ const StyledHome = styled.div`
     /* border: 2px solid purple; */
     padding: 15px;
     margin: 10px;
-    :hover .rightArrow {
-      border: solid tomato;
+    :hover .rightArrow,
+    :hover .leftArrow {
+      border: solid ${(props) => props.theme.accent};
       border-width: 0 10px 10px 0;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .photoContainer {
+      background-position: 25%;
+    }
+  }
+  @media (max-width: 1024px) {
+    .photoContainer {
+      background-position: 35%;
+    }
+  }
+  @media (max-width: 768px) {
+    .photoContainer {
+      background-position: center;
     }
   }
 `;
