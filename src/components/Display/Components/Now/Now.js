@@ -17,23 +17,26 @@ const Now = (props) => {
         variants={pageVariants}
         transition={pageTransition}
       >
-
-        <h1>7 questions <span>because who has time for <em>21?!</em></span><br/> answered in 7 words (or less)</h1>
+        <h1>
+          7 questions{" "}
+          <span>
+            because who has time for <em>21?!</em>
+          </span>
+          <br /> answered in 7 words (or less)
+        </h1>
         {/* <h1>7 Questions Answered In 7 Words (or less)</h1> */}
 
         <ol>
           <li>
             <strong>What are you doing now?</strong>
           </li>
-          <p>Treating 6 month bootcamp like grad school</p>
+          <p>Treating 6 month bootcamp like grad school.</p>
           <li>Why tech?</li>
           {/* <li>What are you looking forward to in the tech industry?</li> */}
-          <p>
-                Teamwork, constant learning, making things, solving problems
-              </p>
+          <p>Teamwork, constant learning, making things, solving problems.</p>
           {/* <p>Solving problems by constant learning, teamwork, + creating</p> */}
           <li>So, what's next?</li>
-          <p>Finding awesome job + Learning TypeScript, TDD, + PHP.</p>
+          <p>Finding awesome job + Learning TypeScript, TDD, PHP.</p>
           {/* <li>
                 3. Any side projects you're working onfor fun? My target >
                 Wireframe. My progress > ReadyBudgetGo.com.
@@ -43,20 +46,23 @@ const Now = (props) => {
             <a github>help</a>!
           </li> */}
 
-          <li>What are you looking for in your next role and company?</li>
-          <p>Growth mindest, learning opportunities, ______, and remote.</p>
+          <li>What's important to you in a job?</li>
+          <p>Good people, product, and process + remote compatible.</p>
 
-          
           <li>Aside from programming, what else do you enjoy?</li>
-          <p>Theater, travel, tea, alliteration, and Muji pens</p>
+          <p>Theater, travel, tea, alliteration, and Muji pens.</p>
           <li>Any travel in particular on your mind?</li>
           <p>
             Thank you for asking! Fantasizing about{" "}
-            <a href="#">
+            <a
+              href="https://www.alpacaexpeditions.com/inca-trail-expedition-5d4n/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <em>this</em>...
             </a>
           </p>
-          <li>You started in theater?!</li>
+          <li>Your background is in theater?!</li>
           <p>You think closures are heady? Try Shakespeare.</p>
           {/* <p>Think closures can be ____? Try Shakespeare.</p> */}
           {/* <p>Thrown by generator functions? Try Shakespeare.</p> */}

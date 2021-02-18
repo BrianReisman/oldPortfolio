@@ -15,9 +15,9 @@ const Home = (props) => {
   console.log(history.length);
   console.log(history.location.pathname);
 
-  const rtArrow = () => {
-    history.push("/me");
-  };
+  // const rtArrow = () => {
+  //   history.push("/me");
+  // };
 
   return (
     <StyledHome>

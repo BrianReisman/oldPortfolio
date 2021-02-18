@@ -22,7 +22,7 @@ const StyledSideBar = styled.div`
     padding: 0 1% 0.5% 1%;
     text-align: center;
     :before {
-      content: ">";
+      /* content: ">"; */
     }
   }
   p {
@@ -55,32 +55,32 @@ const StyledSideBar = styled.div`
   @media (max-width: ${(props) => props.theme.breakpoints[1]}) {
     /* background-color: red; */
     code:before {
-      content: "1";
+      /* content: "1"; */
     }
   }
   @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
     code:before {
-      content: "2";
+      /* content: "2"; */
     }
-    background-color: lightgoldenrodyellow;
+    /* background-color: lightgoldenrodyellow; */
   }
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
     code:before {
-      content: "3";
+      /* content: "3"; */
     }
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
   }
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
     code:before {
-      content: "4";
+      /* content: "4"; */
     }
-    background-color: black;
+    /* background-color: black; */
   }
   @media (max-width: ${(props) => props.theme.breakpoints[5]}) {
     code:before {
-      content: "5";
+      /* content: "5"; */
     }
-    background-color: black;
+    /* background-color: black; */
   }
   /* @media (max-width: ${(props) => props.theme.breakpoints[6]}) {
     background-color: white;

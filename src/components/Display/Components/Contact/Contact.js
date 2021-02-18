@@ -14,7 +14,7 @@ const Contact = (props) => {
   const btnClickHandler = (e) => {
     e.preventDefault();
     alert(
-      "I would've clicked the button out of curiosity too! Feel free to contact me directly at BrianReisman@ProtonMail.com"
+      "I would've clicked the button out of curiosity too! We have so much in common. I have a feeling we will get along swimmingly! Feel free to contact me directly at BrianReisman@ProtonMail.com"
     );
   };
 

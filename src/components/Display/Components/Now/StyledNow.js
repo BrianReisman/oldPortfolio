@@ -10,7 +10,7 @@ const StyledNow = styled.div`
     /* border: 1px solid blue; */
     height: 100vh;
     width: 100%;
-    padding: 15px 0;
+    padding: 25px 0;
   }
 
   * {
