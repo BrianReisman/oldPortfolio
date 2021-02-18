@@ -59,7 +59,7 @@ const Now = (props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <em>this</em>...
+              <em className="link">this...</em>
             </a>
           </p>
           <li>Your background is in theater?!</li>

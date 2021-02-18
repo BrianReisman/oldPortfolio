@@ -11,9 +11,6 @@ const StyledSideBar = styled.div`
   flex-direction: column;
   height: 100vh;
 
-  .name {
-    font-size: 6.8rem;
-  }
   code {
     font-size: 1.6rem;
     position: fixed;
@@ -28,14 +25,7 @@ const StyledSideBar = styled.div`
   p {
     font-size: 2vw;
   }
-  .accent,
-  .lastAccent {
-    color: ${(props) => props.theme.accent};
-  }
-  .lastAccent {
-    font-size: 3.5rem;
-    line-height: 0.75;
-  }
+
 
   /* WELCOME TEXT */
   s {
@@ -44,9 +34,6 @@ const StyledSideBar = styled.div`
   p a {
     text-decoration: none;
     color: ${(props) => props.theme.accent};
-  }
-  .welcome {
-    padding: 4% 4% 4% 8%;
   }
 
   /* Media Queries */
@@ -107,10 +94,6 @@ const StyledSideBar = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
-    .welcome {
-      /* padding: 2% 2% 2% 2%; */
-      /* margin: 0 0 2% 0; */
-    }
     .name {
       font-size: 7.75vw;
       display: inline;
@@ -118,11 +101,10 @@ const StyledSideBar = styled.div`
         content: " ";
       }
     }
-    .text{
+    .text {
       /* border: 2px solid gold; */
       font-size: 2.75vw;
       margin-top: 7px;
-
     }
     .lastAccent {
       font-size: 4rem;

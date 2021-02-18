@@ -7,7 +7,6 @@ const StyledNow = styled.div`
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    /* border: 1px solid blue; */
     height: 100vh;
     width: 100%;
     padding: 25px 0;
@@ -16,20 +15,16 @@ const StyledNow = styled.div`
   * {
     /* border: 1px solid tomato; */
   }
-span{
-  font-size: 1.24rem;
-}
+  span {
+    font-size: 1.24rem;
+  }
   h1 {
     font-size: 2.4rem;
-    /* font-weight: bold; */
     text-align: center;
   }
   .containerNowTop {
     text-align: center;
     width: 100%;
-    /* margin-bottom: 2vh; */
-    /* position: fixed; */
-    /* bottom: 0; */
     p {
       margin: 0.5%;
       font-size: 2rem;
@@ -44,15 +39,14 @@ span{
     justify-content: center;
     list-style-position: inside;
     p {
-      font-size: 1.5rem;
       margin: 0px 0px 0px 50px;
+      font-style: italic;
+      font-size: 1.7rem;
     }
     li {
+      font-size: 1.4rem;
       /* border: 1px solid blue; */
       width: 70%;
-      font-style: italic;
-      font-weight: lighter;
-      font-size: 1.7rem;
       border-left: 3px solid ${(props) => props.theme.accent};
       /* border-left: 15px solid salmon; */
       /* border-top: 15px solid tomato; */
@@ -63,6 +57,12 @@ span{
   }
   em {
     font-style: italic;
+  }
+  .link {
+    color: ${(props) => props.theme.accent};
+  }
+  a {
+    text-decoration: none;
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints[1]}) {

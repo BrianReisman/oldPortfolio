@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 const StyledNav = styled.nav`
-  /* * {
-    border: 2px solid purple;
-  } */
+   *{
+    font-family: "Times New Roman", Times, serif;
+    /* border: 2px solid purple; */
+  }
   margin: 8px;
   padding: 8px;
   ul {
