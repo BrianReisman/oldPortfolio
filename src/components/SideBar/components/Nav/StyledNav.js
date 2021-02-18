@@ -35,20 +35,17 @@ const StyledNav = styled.nav`
   }
 
   /* //* 1280 macBook 13inch*/
-  @media (max-width: 1280px) {
-    //!Teal
+  @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
     ul a {
-      font-size: 1.75rem;
+      /* font-size: 1.75rem; */
+      font-size: 2.25vw;
       padding: 10px 1vw;
       margin: 10px 5px;
     }
   }
 
   /*//* 1024 */
-  @media (max-width: 1024px) {
-    //!seagreen
-    *{
-    }
+  @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
     ul {
       /* border: 1px solid blue; */
       margin-right: 50px;
@@ -56,19 +53,16 @@ const StyledNav = styled.nav`
       flex-direction: column;
       align-items: center;
     }
-
-    /* nav item text smaller */
     ul a {
       font-size: 1.6rem;
       margin: 5px;
       padding: 5px 5px;
-      border-radius: 13px 0 13px 0;
       /* width: 50%; */
     }
   }
 
   /*//* 768 --- TOP */
-  @media (max-width: 768px) {
+  @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
     //!Orange
     ul a {
       width: 75%;

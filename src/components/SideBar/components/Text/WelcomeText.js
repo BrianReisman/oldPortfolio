@@ -16,7 +16,7 @@ const WelcomeText = (props) => {
         Reisman<span className="accent">,</span>
       </p>
       
-      <p>
+      <p className="text">
         and I <s>break</s> make things for the web
         <span className="lastAccent">.</span>
       </p>

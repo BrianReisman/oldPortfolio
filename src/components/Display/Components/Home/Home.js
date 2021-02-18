@@ -32,14 +32,14 @@ const Home = (props) => {
       >
         <div className="photoContainer">
           {/* <div> */}
-            <div className="arrowDiv">
+            {/* <div className="arrowDiv">
               <i className="arrow leftArrow"></i>
-            </div>
+            </div> */}
 
-            <div className="arrowDiv" onClick={rtArrow}>
-              <i className="arrow rightArrow"></i>
+            {/* <div className="arrowDiv" onClick={rtArrow}>
+              <i className="arrow rightArrow"></i> */}
             {/* </div> */}
-          </div>
+          {/* </div> */}
         </div>
       </motion.div>
     </StyledHome>
