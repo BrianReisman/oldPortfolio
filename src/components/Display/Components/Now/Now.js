@@ -17,68 +17,66 @@ const Now = (props) => {
         variants={pageVariants}
         transition={pageTransition}
       >
-        <div className="containerNowTop">
-          <p className="inline">
-            Interested in what I've <>done</>? 👉
-          </p>
-          <span className="icons">
-            <Icons />
-          </span>
-          <p>
-            {" "}
-            {/* Here's what I'm <em>doing</em>. 👇 */}
-            {/* Here's a bit about me in 7 questions answered in 7 words (or less) */}
-            <em></em>
-            {/* 👇 */}
-          </p>
-          {/* {/* <button onClick={props.modalClickHandler}>show modal</button> */}
-        </div>
 
-        <div>
-          <div>
-            {/* <h1>7 Questions Answered In 7 Words (or less)</h1> */}
-            <h1>7 questions answered in 7 words (or less)</h1>
-            <ol>
-              <li>
-                <strong>What are you doing now?</strong>
-              </li>
-              <p>Treating 6 month bootcamp like grad school</p>
-              <li>What's next?</li>
-              <p>Finding awesome job + practicing TDD + learning PHP.</p>
-              {/* <li>
+        <h1>7 questions <span>because who has time for <em>21?!</em></span><br/> answered in 7 words (or less)</h1>
+        {/* <h1>7 Questions Answered In 7 Words (or less)</h1> */}
+
+        <ol>
+          <li>
+            <strong>What are you doing now?</strong>
+          </li>
+          <p>Treating 6 month bootcamp like grad school</p>
+          <li>Why tech?</li>
+          {/* <li>What are you looking forward to in the tech industry?</li> */}
+          <p>
+                Teamwork, constant learning, making things, solving problems
+              </p>
+          {/* <p>Solving problems by constant learning, teamwork, + creating</p> */}
+          <li>So, what's next?</li>
+          <p>Finding awesome job + Learning TypeScript, TDD, + PHP.</p>
+          {/* <li>
                 3. Any side projects you're working onfor fun? My target >
                 Wireframe. My progress > ReadyBudgetGo.com.
               </li> */}
-              {/* <li>
+          {/* <li>
             4. Problem I'm stuck on: Recreating useState in vanilla JavaScript.{" "}
             <a github>help</a>!
           </li> */}
 
-              <li>What are you looking for in your next role and company?</li>
-              <p>Growth mindest, learning opportunities, ______, and remote.</p>
+          <li>What are you looking for in your next role and company?</li>
+          <p>Growth mindest, learning opportunities, ______, and remote.</p>
 
-              <li>Why drew you to tech?</li>
-              {/* <p>
-                Teamwork, constant learning, making things, solving problems
-              </p> */}
-              <p>Solving problems by constant learning, teamwork, + creating</p>
-              <li>I get you love programming, what else?</li>
-              <p>Theater, Travel, Tea, and Muji Pens</p>
-              <li>Any travel in particular on your mind?</li>
-              <p>
-                Thank you for asking! Fantasizing about{" "}
-                <a href="#">
-                  <em>this</em>.
-                </a>
-              </p>
-              <li>You started in theater?!</li>
-              <p>Think closures are heady? Try Shakespeare.</p>
-              {/* <p>Think closures can be ____? Try Shakespeare.</p> */}
-              {/* <p>Thrown by generator functions? Try Shakespeare.</p> */}
-            </ol>
-          </div>
+          
+          <li>Aside from programming, what else do you enjoy?</li>
+          <p>Theater, travel, tea, alliteration, and Muji pens</p>
+          <li>Any travel in particular on your mind?</li>
+          <p>
+            Thank you for asking! Fantasizing about{" "}
+            <a href="#">
+              <em>this</em>...
+            </a>
+          </p>
+          <li>You started in theater?!</li>
+          <p>You think closures are heady? Try Shakespeare.</p>
+          {/* <p>Think closures can be ____? Try Shakespeare.</p> */}
+          {/* <p>Thrown by generator functions? Try Shakespeare.</p> */}
+        </ol>
+
+        <div className="containerNowTop">
+          <p className="inline">
+            Interested in what I've <>done</>? 👉
+          </p>
+          <Icons />
+          {/* <p> */} {/* Here's what I'm <em>doing</em>. 👇 */}
+          {/* Here's a bit about me in 7 questions answered in 7 words (or less) */}
+          {/* 👇 */}
+          {/* </p> */}
+          {/* {/* <button onClick={props.modalClickHandler}>show modal</button> */}
         </div>
-        {/* <ul>
+      </motion.div>
+    </StyledNow>
+
+    /* <ul>
           <li>
             Finishing up my studies at a 6 month full-time full stack web
             developement program that I'm treating like grad school.
@@ -87,24 +85,24 @@ const Now = (props) => {
             Reading JavaScript: The Definitive Guide (currently on page 276, and
             just started learning about the Map class. Array? Object? What{" "}
             <em>are</em> you?!)
-          </li> */}
+          </li> */
 
-        {/* <li>
+    /* <li>
             Working on an awesome 9 person team building a job board for Jr.
             JavaScript developers
-          </li> */}
-        {/* <li>
+          </li> */
+    /* <li>
             Wireframing my first solo CRUD app! A travel budget calculator Link
             coming soon...
-          </li> */}
-        {/* <p>
+          </li> */
+    /* <p>
           Thanks Derek Sivers for the idea to have this page... and start
           programming... and live life on my terms.
-        </p> */}
-        {/* <li>Reading Seth Godin's The Practice</li> */}
+        </p> */
+    /* <li>Reading Seth Godin's The Practice</li> */
 
-        {/*  */}
-        {/* </ul>
+    /*  */
+    /* </ul>
         <ul>
           <p>Code is great but here are some other things I love:</p>
           <li>Theater</li>
@@ -117,7 +115,7 @@ const Now = (props) => {
             >
               <em>this</em>
             </a>
-            !)
+            
           </li>
           <li>Tea (especially with toasted rice or black pepper)</li>
           <li>Muji Pens</li>
@@ -127,11 +125,9 @@ const Now = (props) => {
           <li>Introducing myself to stictly typed languages with Typescript</li>
           <li>Deepening my testing knowledge with Jest</li>
           <li>Building on my backend stack with Next.js</li>
-        </ul> */}
+        </ul> */
 
-        {/*  */}
-
-        {/* <ul>
+    /* <ul>
           <h1>7 Questions Answered In 7 Words (or less)</h1>
           <ul>
             <li>
@@ -158,11 +154,9 @@ const Now = (props) => {
             <li>
               7. You started in theater?! Think JavaScript syntax is weird? Try
               Shakespeare.
-            </li>*/}
-        {/* </ul>  */}
-        {/* </ul> */}
-      </motion.div>
-    </StyledNow>
+            </li>*/
+    /* </ul>  */
+    /* </ul> */
   );
 };
 

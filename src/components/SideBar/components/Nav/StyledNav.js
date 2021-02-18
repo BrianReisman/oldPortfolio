@@ -38,7 +38,7 @@ const StyledNav = styled.nav`
   @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
     ul a {
       /* font-size: 1.75rem; */
-      font-size: 2.25vw;
+      font-size: 2.5vw;
       padding: 10px 1vw;
       margin: 10px 5px;
     }

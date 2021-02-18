@@ -24,11 +24,11 @@ const Projects = (props) => {
         <div className="grid">
           <div className="projectRows">
             <ProjectCard num="1" />
-            <ProjectCard num="2" />
+            {/* <ProjectCard num="2" /> */}
           </div>
           <div className="projectRows">
-          <ProjectCard num="3" />
-          <ProjectCard num="4" />
+          {/* <ProjectCard num="3" /> */}
+          {/* <ProjectCard num="4" /> */}
         </div>
         </div>
       </motion.div>

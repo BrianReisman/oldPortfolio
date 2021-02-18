@@ -53,7 +53,7 @@ const StyledSideBar = styled.div`
 
   //1440+ antiquwhite.
   @media (max-width: ${(props) => props.theme.breakpoints[1]}) {
-    background-color: red;
+    /* background-color: red; */
     code:before {
       content: "1";
     }

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-const StyledDisplay = styled.div`
+const StyledDisplay = styled.main`
   *{
 
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
   }
   box-sizing: border-box;
 
@@ -30,7 +30,7 @@ const StyledDisplay = styled.div`
 
 
 
-  .arrows{
+  /* .arrows{
     border: 1px solid blue;
     z-index: 1;
     display: flex;
@@ -43,7 +43,6 @@ const StyledDisplay = styled.div`
     display: inline-block;
     padding: 10px;
     margin: 10px;
-    /* border: 1px dotted green; */
     height: 40px;
     width: 40px;
   }
@@ -57,14 +56,12 @@ const StyledDisplay = styled.div`
   }
   .arrowDiv {
     //*for both arrows, specifically div+:hover.
-    /* border: 2px solid purple; */
     padding: 15px;
     margin: 10px;
     :hover .rightArrow,
     :hover .leftArrow {
       border: solid tomato;
       border-width: 0 10px 10px 0;
-    }
-  }
+    } */
 `;
 export default StyledDisplay;
