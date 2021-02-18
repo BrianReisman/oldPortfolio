@@ -1,16 +1,34 @@
 import styled from "styled-components";
 
 const StyledDisplay = styled.div`
-  /* border: 1px solid tomato; */
+  *{
+
+  border: 1px solid tomato;
+  }
+  box-sizing: border-box;
+
+
+  flex: 1 1 65%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .top {
+    position: fixed;
+    top: 0;
+  }
+
+
   main {
     box-sizing: border-box;
     height: 100vh;
     width: 100%;
     position: relative; //for framer-motion
     overflow-x: hidden;
-    /* overflow-y: hidden; */
     display: flex;
   }
+
+
 
   .arrows{
     border: 1px solid blue;
@@ -47,16 +65,6 @@ const StyledDisplay = styled.div`
       border: solid tomato;
       border-width: 0 10px 10px 0;
     }
-  }
-
-  flex: 1 1 65%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  .top {
-    position: fixed;
-    top: 0;
   }
 `;
 export default StyledDisplay;
