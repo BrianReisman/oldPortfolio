@@ -17,13 +17,13 @@ const Now = (props) => {
         variants={pageVariants}
         transition={pageTransition}
       >
-        <h1>
-          7 questions{" "}
-          <span>
-            because who has time for <em>21?!</em>
-          </span>
-          <br /> answered in 7 words (or less)
-        </h1>
+        <div className="NowTop">
+          <h1>7 questions* answered in 7 words (or less)</h1>
+          <p>
+            *because who has time for <em>21?!</em>
+          </p>
+        </div>
+
         {/* <h1>7 Questions Answered In 7 Words (or less)</h1> */}
 
         <ol>

@@ -53,12 +53,27 @@ const StyledContact = styled.div`
     /* margin-top: 15vh; */
   }
   .topContainer {
+    * {
+    }
+      /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3%;
-    line-height: 35px;
+    /* margin: 1%; */
+    line-height: 3vw;
   }
+  .blueMic {
+    color: blue;
+  }
+  .centerText {
+    line-height: 3vw;
+    /* border: 2px dotted turquoise; */
+  }
+
+
+
+
+
   .icons {
     display: inline-block;
   }

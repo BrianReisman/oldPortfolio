@@ -15,6 +15,12 @@ const StyledNow = styled.div`
   * {
     /* border: 1px solid tomato; */
   }
+  .NowTop p{
+    margin-top: 1vh;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
   span {
     font-size: 1.24rem;
   }

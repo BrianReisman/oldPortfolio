@@ -33,32 +33,40 @@ const Contact = (props) => {
             </a>
             ?
           </p>
-          <div>
-            <p className="inline">More digital proof I exist?</p>
+          <p className="inline">
+            More digital proof I exist?
             <span className="icons">
               <Icons />
             </span>
-          </div>
+          </p>
+          <p className="centerText">
+            For anything else feel free to <span className="blueMic">🎙</span>💬
+            ask me 👇
+          </p>
         </div>
 
         <form action="MAILTO:'brianreisman@protonmail.com'">
-          <p className="centerText">
-            For anything else feel free to 🎙💬 ask me 👇
-          </p>
           <label htmlFor="name">
             {/* {"Name"} */}
-            <input type="text" id="name" placeholder="name" value="Brian Reisman"/>
+            <input
+              type="text"
+              id="name"
+              placeholder="name"
+            />
           </label>
           <label htmlFor="email">
             {/* {"Email"} */}
-            <input type="text" id="email" placeholder="email" value="brianreisman@protonmail.com"/>
+            <input
+              type="text"
+              id="email"
+              placeholder="email"
+            />
           </label>
           <label htmlFor="message">
             {/* {"Message"} */}
             <textarea
               id="message"
               placeholder="Messages written in verse will be replied to first."
-              value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in maiores nesciunt pariatur, molestiae, recusandae eveniet a culpa maxime alias velit quaerat molestias et rerum facere dolor, nobis fugit consequatur reiciendis debitis magni ipsam error. Illo culpa saepe beatae voluptatem illum rem libero, dignissimos repellat odio ratione provident." 
             />
           </label>
           <button onClick={btnClickHandler}>
