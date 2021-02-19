@@ -35,7 +35,6 @@ const Home = (props) => {
             {/* <div className="arrowDiv">
               <i className="arrow leftArrow"></i>
             </div> */}
-
             {/* <div className="arrowDiv" onClick={rtArrow}>
               <i className="arrow rightArrow"></i> */}
             {/* </div> */}

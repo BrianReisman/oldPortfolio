@@ -15,7 +15,7 @@ const StyledNow = styled.div`
   * {
     /* border: 1px solid tomato; */
   }
-  .NowTop p{
+  .NowTop p {
     margin-top: 1vh;
     text-align: center;
     font-size: 1.2rem;
@@ -93,11 +93,24 @@ const StyledNow = styled.div`
     h1 {
       font-size: 2rem;
     }
-    .containerNowTop {
-      p {
-        /* margin: 0.5%;
-        font-size: 1.75rem; */
+  }
+  @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
+  .motion {
+    padding: 0;
+
+    height: 8vh;
       }
+
+    * {
+      /* background-color: teal; */
+    }
+    ol {
+      p {
+        font-size: 1rem;
+      }
+    }
+    h1 {
+      font-size: 1.5rem;
     }
   }
 `;

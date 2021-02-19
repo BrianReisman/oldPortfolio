@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import StyledText from './StyledText';
-const WelcomeText = (props) => {
+import StyledText from "./StyledText";
 
+const WelcomeText = (props) => {
   return (
     <StyledText>
       <div className="welcome">
@@ -24,8 +24,8 @@ const WelcomeText = (props) => {
         </p>
         {/* <p>and I use code to <s>break</s> make things for the web<span className="lastAccent">.</span></p> */}
         {/* <p>and I <s>break</s> make things out of code ?for the web?<span className="lastAccent">.</span></p> */}
-
       </div>
+      <code>Built by Brian. Brought to you in part by electricity. 2021</code>
     </StyledText>
   );
 };

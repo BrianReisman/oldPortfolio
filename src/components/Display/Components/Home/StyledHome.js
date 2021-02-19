@@ -74,5 +74,11 @@ const StyledHome = styled.div`
       background-position: center;
     }
   }
+  @media (max-width: ${props => props.theme.breakpoints[3]}) {
+    .motion {
+    height: 80vh;
+      background-position: cover;
+    }
+  }
 `;
 export default StyledHome;

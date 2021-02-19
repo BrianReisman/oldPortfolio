@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
 const StyledDisplay = styled.main`
-  *{
-
-  /* border: 1px solid tomato; */
+  * {
+    /* border: 1px solid tomato; */
   }
   box-sizing: border-box;
-
 
   flex: 1 1 65%;
   height: 100vh;
@@ -18,7 +16,6 @@ const StyledDisplay = styled.main`
     top: 0;
   }
 
-
   main {
     box-sizing: border-box;
     height: 100vh;
@@ -27,8 +24,6 @@ const StyledDisplay = styled.main`
     overflow-x: hidden;
     display: flex;
   }
-
-
 
   /* .arrows{
     border: 1px solid blue;
@@ -63,5 +58,9 @@ const StyledDisplay = styled.main`
       border: solid tomato;
       border-width: 0 10px 10px 0;
     } */
+
+  @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
+    height: 20vh;
+  }
 `;
 export default StyledDisplay;

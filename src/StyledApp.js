@@ -9,9 +9,7 @@ const StyledApp = styled.div`
 
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
     flex-direction: column;
-    SideBar{
-      background-color: black;
-    }
+    height: 100vh;
   }
 `;
 export default StyledApp;

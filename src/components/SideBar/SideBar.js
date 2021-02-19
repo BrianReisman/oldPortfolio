@@ -12,7 +12,6 @@ export default function SideBar() {
       {/* <Toggle/> */}
       <WelcomeText />
       <Nav />
-      <code>Built by Brian. Brought to you in part by electricity. 2021</code>
     </StyledSideBar>
   );
 }

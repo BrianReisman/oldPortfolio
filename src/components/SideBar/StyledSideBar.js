@@ -11,21 +11,9 @@ const StyledSideBar = styled.div`
   flex-direction: column;
   height: 100vh;
 
-  code {
-    font-size: 1.6rem;
-    position: fixed;
-    bottom: 0;
-    width: 35%;
-    padding: 0 1% 0.5% 1%;
-    text-align: center;
-    :before {
-      content: ">";
-    }
-  }
   p {
     font-size: 2vw;
   }
-
 
   /* WELCOME TEXT */
   s {
@@ -69,9 +57,18 @@ const StyledSideBar = styled.div`
     }
     /* background-color: black; */
   }
-  /* @media (max-width: ${(props) => props.theme.breakpoints[6]}) {
-    background-color: white;
-  } */
+  @media (max-width: ${(props) => props.theme.breakpoints[6]}) {
+    code: before{
+      content: '6'
+    }
+    /* background-color: white; */
+  }
+  @media (max-width: ${(props) => props.theme.breakpoints[7]}) {
+    code: before{
+      content: '7'
+    }
+    /* background-color: white; */
+  }
 
 
 
@@ -92,22 +89,6 @@ const StyledSideBar = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
-    /* .name {
-      font-size: 7.75vw;
-      display: inline;
-      :before {
-        content: " ";
-      }
-    }
-    .text {
-      font-size: 2.75vw;
-      margin-top: 7px;
-    }
-    .lastAccent {
-      font-size: 4rem;
-      line-height: 1vw;
-    } */
-
     nav ul {
       display: flex;
       flex-direction: column;
@@ -119,6 +100,13 @@ const StyledSideBar = styled.div`
       padding: 5px 5px;
       border-radius: 13px 0 13px 0;
       width: 100%;
+    }
+
+    code{
+      color: blue;
+      /* width: 100%; */
+      text-align: right;
+      /* position: relative; */
     }
   }
 
