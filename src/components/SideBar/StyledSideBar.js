@@ -19,7 +19,7 @@ const StyledSideBar = styled.div`
     padding: 0 1% 0.5% 1%;
     text-align: center;
     :before {
-      /* content: ">"; */
+      content: ">";
     }
   }
   p {
@@ -38,34 +38,34 @@ const StyledSideBar = styled.div`
 
   /* Media Queries */
 
-  //1440+ antiquwhite.
+  //!COLOR + CONTENT
   @media (max-width: ${(props) => props.theme.breakpoints[1]}) {
     /* background-color: red; */
     code:before {
-      /* content: "1"; */
+      content: "1";
     }
   }
   @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
     code:before {
-      /* content: "2"; */
+      content: "2";
     }
     /* background-color: lightgoldenrodyellow; */
   }
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
     code:before {
-      /* content: "3"; */
+      content: "3";
     }
     /* background-color: antiquewhite; */
   }
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
     code:before {
-      /* content: "4"; */
+      content: "4";
     }
     /* background-color: black; */
   }
   @media (max-width: ${(props) => props.theme.breakpoints[5]}) {
     code:before {
-      /* content: "5"; */
+      content: "5";
     }
     /* background-color: black; */
   }
@@ -73,14 +73,12 @@ const StyledSideBar = styled.div`
     background-color: white;
   } */
 
+
+
+
   /* //* 1280 macBook 13inch*/
   @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
-    .name {
-      font-size: 6.8rem;
-      font-size: 8vw;
-    }
     code {
-      /* font-size: 1.45rem; */
       font-size: 1.5vw;
     }
   }
@@ -94,7 +92,7 @@ const StyledSideBar = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
-    .name {
+    /* .name {
       font-size: 7.75vw;
       display: inline;
       :before {
@@ -102,14 +100,13 @@ const StyledSideBar = styled.div`
       }
     }
     .text {
-      /* border: 2px solid gold; */
       font-size: 2.75vw;
       margin-top: 7px;
     }
     .lastAccent {
       font-size: 4rem;
       line-height: 1vw;
-    }
+    } */
 
     nav ul {
       display: flex;

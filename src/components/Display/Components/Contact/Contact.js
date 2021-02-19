@@ -5,10 +5,7 @@ import { motion } from "framer-motion";
 import StyledContact from "./StyledContact";
 import PDF from "../../../../assets/documents/BrianReismanResume.pdf";
 import Icons from "../Icons/Icons";
-import {
-  pageVariants,
-  pageTransition,
-} from "../../../../animation/animation";
+import { pageVariants, pageTransition } from "../../../../animation/animation";
 
 const Contact = (props) => {
   const btnClickHandler = (e) => {
@@ -45,21 +42,23 @@ const Contact = (props) => {
         </div>
 
         <form action="MAILTO:'brianreisman@protonmail.com'">
-          <p className="centerText">For anything else feel free to 🎙💬 ask me 👇</p>
+          <p className="centerText">
+            For anything else feel free to 🎙💬 ask me 👇
+          </p>
           <label htmlFor="name">
             {/* {"Name"} */}
-            <input type="text" id="name" placeholder="name" />
+            <input type="text" id="name" placeholder="name" value="Brian Reisman"/>
           </label>
           <label htmlFor="email">
             {/* {"Email"} */}
-            <input type="text" id="email" placeholder="email" />
+            <input type="text" id="email" placeholder="email" value="brianreisman@protonmail.com"/>
           </label>
           <label htmlFor="message">
             {/* {"Message"} */}
-            {/* <input type="textarea" id="message" /> */}
             <textarea
               id="message"
               placeholder="Messages written in verse will be replied to first."
+              value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in maiores nesciunt pariatur, molestiae, recusandae eveniet a culpa maxime alias velit quaerat molestias et rerum facere dolor, nobis fugit consequatur reiciendis debitis magni ipsam error. Illo culpa saepe beatae voluptatem illum rem libero, dignissimos repellat odio ratione provident." 
             />
           </label>
           <button onClick={btnClickHandler}>

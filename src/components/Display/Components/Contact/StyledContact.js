@@ -1,22 +1,21 @@
 import styled from "styled-components";
 
 const StyledContact = styled.div`
-display: flex;
-align-items: center;
   .motion {
-    /* background-color: red; */
-    height: 75vh; //! why not 100vh like other components in display?
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; //! why not 100vh like other components in display?
     width: 100%;
+    box-sizing: border-box;
+    position: absolute; //*needed for framer motion
+    padding-bottom: 15vh;
   }
-  position: absolute; //*needed for framer motion
 
   * {
     /* border: 1px solid tomato; */
   }
-
-  height: 100vh;
-  width: 100%;
-  box-sizing: border-box;
 
   p {
     font-size: ${(props) => props.theme.fonts.text};
@@ -34,16 +33,22 @@ align-items: center;
   textarea {
     margin: 10px;
     padding: 10px;
-    /* border: 1px solid blue; */
     outline: none;
     :focus {
-      border: 1px solid tomato;
+      border: 0.5px solid #bbb;
     }
   }
+  input {
+    font-size: 1.15rem;
+    /* height: 165px; */
+    width: 250px;
+  }
   textarea {
-    height: 135px;
+    font-size: 1.5rem;
+    height: 165px;
     width: 750px;
   }
+
   form {
     /* margin-top: 15vh; */
   }
@@ -62,8 +67,9 @@ align-items: center;
   }
   @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
     textarea {
-      height: 150px;
-      width: 600px;
+      font-size: 1.5rem;
+      height: 165px;
+      width: 57vw;
     }
   }
 `;
