@@ -74,10 +74,10 @@ const StyledHome = styled.div`
       background-position: center;
     }
   }
-  @media (max-width: ${props => props.theme.breakpoints[3]}) {
+  @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
     .motion {
-    height: 80vh;
-      background-position: cover;
+      height: 80vh;
+      /* background-position: cover; */
     }
   }
 `;

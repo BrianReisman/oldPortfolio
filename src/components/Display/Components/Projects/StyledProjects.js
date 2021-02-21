@@ -4,15 +4,11 @@ const StyledProjects = styled.div`
   .motion {
     height: 100vh;
     width: 100%;
-  }
   position: absolute; //*needed for framer motion
+  }
   /*//! overflow-x: hidden;
   overflow-y: hidden; */
 
-  height: 100vh;
-  width: 100%;
-  /* background-color: black; */
-  /* border: 3px solid tomato; */
   .projectRows {
     display: flex;
     justify-content: center;
@@ -28,6 +24,13 @@ const StyledProjects = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
+    .motion {
+      height: 80vh;
+    }
+    /* background-color: red; */
   }
 `;
 export default StyledProjects;

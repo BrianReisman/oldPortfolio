@@ -6,7 +6,7 @@ const StyledContact = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; //! why not 100vh like other components in display?
+    height: 100vh;
     width: 100%;
     box-sizing: border-box;
     position: absolute; //*needed for framer motion
@@ -55,7 +55,7 @@ const StyledContact = styled.div`
   .topContainer {
     * {
     }
-      /* border: 1px solid blue; */
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,10 +70,6 @@ const StyledContact = styled.div`
     /* border: 2px dotted turquoise; */
   }
 
-
-
-
-
   .icons {
     display: inline-block;
   }
@@ -85,6 +81,12 @@ const StyledContact = styled.div`
       font-size: 1.5rem;
       height: 165px;
       width: 57vw;
+    }
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
+    .motion {
+      height: 80vh;
     }
   }
 `;
