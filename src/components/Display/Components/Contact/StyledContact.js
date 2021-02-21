@@ -82,12 +82,38 @@ const StyledContact = styled.div`
       height: 165px;
       width: 57vw;
     }
-  }
-
-  @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
     .motion {
       height: 80vh;
     }
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
+    textarea {
+      font-size: 1.2rem;
+      height: 165px;
+      width: 80vw;
+    }
+    input {
+      font-size: 1rem;
+      /* height: 165px; */
+      width: 250px;
+    }
+    .topContainer {
+      line-height: 4vw;
+    }
+  }
+  @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
+    textarea {
+      height: 165px;
+      width: 80vw;
+    }
+    input {
+      /* height: 165px; */
+      width: 250px;
+    }
+  }
+  @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
+    background-color: red;
   }
 `;
 export default StyledContact;

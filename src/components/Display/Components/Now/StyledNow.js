@@ -24,7 +24,7 @@ const StyledNow = styled.div`
   span {
     font-size: 1.24rem;
   }
-  h1 {
+  h2 {
     font-size: 2.4rem;
     text-align: center;
   }
@@ -86,30 +86,30 @@ const StyledNow = styled.div`
     * {
       box-sizing: border-box;
     }
-    ol {
-      p {
-      }
-    }
-    h1 {
+    h2 {
       font-size: 2rem;
     }
   }
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
-  .motion {
-    padding: 0;
 
-    height: 8vh;
-      }
-
+    .motion {
+      height: 80vh;
+    }
     * {
-      /* background-color: teal; */
+      line-height: 12px;
+      /* border: 1px solid blue; */
     }
     ol {
+
       p {
         font-size: 1rem;
       }
     }
-    h1 {
+    .NowTop h2,
+    .NowTop p {
+      line-height: 20px;
+    }
+    h2 {
       font-size: 1.5rem;
     }
   }

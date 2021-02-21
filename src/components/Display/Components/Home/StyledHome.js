@@ -28,14 +28,13 @@ const StyledHome = styled.div`
     align-items: center;
   }
 
-  .arrow {
+  /* .arrow {
     border: solid black;
     border-width: 0 10px 10px 0;
     border-radius: 5px;
     display: inline-block;
     padding: 10px;
     margin: 10px;
-    /* border: 1px dotted green; */
     height: 40px;
     width: 40px;
   }
@@ -46,10 +45,10 @@ const StyledHome = styled.div`
   .rightArrow {
     transform: rotate(-45deg);
     --webkit-transform: rotate(-45deg);
-  }
-  .arrowDiv {
-    //*for both arrows, specifically div+:hover.
-    /* border: 2px solid purple; */
+  } */
+  /* .arrowDiv { */
+  //*for both arrows, specifically div+:hover.
+  /* border: 2px solid purple;
     padding: 15px;
     margin: 10px;
     :hover .rightArrow,
@@ -57,16 +56,11 @@ const StyledHome = styled.div`
       border: solid ${(props) => props.theme.accent};
       border-width: 0 10px 10px 0;
     }
-  }
+  } */
 
-  @media (max-width: 1280px) {
+  @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
     .photoContainer {
       background-position: 25%;
-    }
-  }
-  @media (max-width: 1024px) {
-    .photoContainer {
-      background-position: 35%;
     }
   }
   @media (max-width: 768px) {
@@ -77,8 +71,20 @@ const StyledHome = styled.div`
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
     .motion {
       height: 80vh;
-      /* background-position: cover; */
+    }
+    .photoContainer {
+      background-size: contain;
+      background-position: center;
+      /* background-position: 0% 40%; */
     }
   }
+  @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
+    .photoContainer {
+      background-size: cover;
+      /* background-position: center; */
+    }
+
+}
+
 `;
 export default StyledHome;

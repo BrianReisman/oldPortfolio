@@ -24,59 +24,27 @@ const StyledSideBar = styled.div`
     color: ${(props) => props.theme.accent};
   }
 
-  /* Media Queries */
 
-  //!COLOR + CONTENT
-  @media (max-width: ${(props) => props.theme.breakpoints[1]}) {
-    /* background-color: red; */
-    code:before {
-      content: "1";
-    }
-  }
-  @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
-    code:before {
-      content: "2";
-    }
-    /* background-color: lightgoldenrodyellow; */
-  }
-  @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
-    code:before {
-      content: "3";
-    }
-    /* background-color: antiquewhite; */
-  }
+
+/* //!MOVING ELSEWHERE TO ACTUAL BREAKPOInTS */
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
     code:before {
       content: "4";
     }
-    /* background-color: black; */
   }
   @media (max-width: ${(props) => props.theme.breakpoints[5]}) {
     code:before {
       content: "5";
     }
-    /* background-color: black; */
   }
   @media (max-width: ${(props) => props.theme.breakpoints[6]}) {
-    code: before{
-      content: '6'
+    code: before {
+      content: "6";
     }
-    /* background-color: white; */
   }
   @media (max-width: ${(props) => props.theme.breakpoints[7]}) {
-    code: before{
-      content: '7'
-    }
-    /* background-color: white; */
-  }
-
-
-
-
-  /* //* 1280 macBook 13inch*/
-  @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
-    code {
-      font-size: 1.5vw;
+    code: before {
+      content: "7";
     }
   }
 
@@ -100,13 +68,6 @@ const StyledSideBar = styled.div`
       padding: 5px 5px;
       border-radius: 13px 0 13px 0;
       width: 100%;
-    }
-
-    code{
-      color: blue;
-      /* width: 100%; */
-      text-align: right;
-      /* position: relative; */
     }
   }
 

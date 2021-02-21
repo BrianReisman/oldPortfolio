@@ -24,7 +24,6 @@ const StyledText = styled.div`
   }
   box-sizing: border-box;
 
-
   code {
     font-family: monospace;
     /* background-color: red; */
@@ -39,42 +38,22 @@ const StyledText = styled.div`
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  @media (max-width: ${(props) => props.theme.breakpoints[1]}) {
+    code:before {
+      content: "1";
+    }
+  }
 
   @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
     .name {
       font-size: 6.8rem;
       font-size: 8vw;
+    }
+    code {
+      font-size: 1.5vw;
+    }
+    code:before {
+      content: "2";
     }
   }
 
@@ -87,19 +66,56 @@ const StyledText = styled.div`
     .name {
       /* border: 1px solid blue; */
       display: inline;
-      font-size: 8vw;
+      font-size: 7vw;
       :after {
         content: " ";
       }
     }
     .text {
-    font-size: 2.75vw;
-    margin-top: 7px;
+      font-size: 2.5vw;
     }
-    /* .lastAccent { */
-    /* font-size: 4rem; */
-    /* line-height: 1vw; */
-    /* } */
+    .lastAccent {
+      border: 1px solid black;
+      font-size: 4rem;
+      line-height: 1vw;
+    }
+    code {
+      z-index: 1;
+      /* width: 100%; */
+      /* text-align: center; */
+      /* color: aquamarine; */
+      position: relative;
+    }
+    code:before {
+      content: "3";
+    }
   }
+
+
+
+  @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
+    code:before {
+      content: "4";
+    }
+    background-color: red;
+}
+@media (max-width: ${(props) => props.theme.breakpoints[5]}) {
+  code:before {
+      content: "5";
+    }
+
+    
+}
+@media (max-width: ${(props) => props.theme.breakpoints[6]}) {
+  code:before {
+      content: "6";
+    }
+}
+@media (max-width: ${(props) => props.theme.breakpoints[7]}) {
+  code:before {
+      content: "7";
+    }
+}
+
 `;
 export default StyledText;

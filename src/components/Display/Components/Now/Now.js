@@ -18,7 +18,7 @@ const Now = (props) => {
         transition={pageTransition}
       >
         <div className="NowTop">
-          <h1>7 questions* answered in 7 words (or less)</h1>
+          <h2>7 questions* answered in 7 words (or less)</h2>
           <p>
             *because who has time for <em>21?!</em>
           </p>

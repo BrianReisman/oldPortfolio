@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledNav = styled.nav`
-   *{
+  * {
     font-family: "Times New Roman", Times, serif;
     /* border: 2px solid purple; */
   }
@@ -35,21 +35,25 @@ const StyledNav = styled.nav`
     }
   }
 
-  /* //* 1280 macBook 13inch*/
   @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
     ul a {
-      /* font-size: 1.75rem; */
       font-size: 2.5vw;
       padding: 10px 1vw;
       margin: 10px 5px;
     }
   }
 
-  /*//* 1024 */
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
-    ul {
+    width: 25%;
+    margin: 0;
+    padding: 0;
       /* border: 1px solid blue; */
-      margin-right: 50px;
+    *{
+      /* border: 1px solid blue; */
+    }
+    ul {
+    margin: 0 3vw 0 0;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -58,26 +62,19 @@ const StyledNav = styled.nav`
       font-size: 1.6rem;
       margin: 5px;
       padding: 5px 5px;
-      /* width: 50%; */
     }
   }
 
-  /*//* 768 --- TOP */
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
-    //!Orange
-    ul a {
-      width: 75%;
+      margin-right: 20px;
+    ul {
     }
-  }
 
-  /*//* 600 */
-  @media (max-width: 600px) {
-    //!red
-  }
-
-  /* //*360 Samsung viewport portrail */
-  @media (max-width: 360px) {
-    //!black
+    border: 1px solid black;
+    ul a {
+      border: 1px solid black;
+      width: 100%;
+    }
   }
 `;
 export default StyledNav;
