@@ -61,6 +61,14 @@ const StyledDisplay = styled.main`
 
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
     height: 20vh;
+    .codeMobile{
+      display: block;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      border: 3px solid gold;
+    }
   }
 `;
 export default StyledDisplay;

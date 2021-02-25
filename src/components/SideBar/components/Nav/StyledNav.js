@@ -44,29 +44,30 @@ const StyledNav = styled.nav`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
-    width: 25%;
-    margin: 0;
-    padding: 0;
-      /* border: 1px solid blue; */
-    *{
-      /* border: 1px solid blue; */
+    * {
+      /* border: 1px dotted blue; */
     }
+    width: 50%;
+    align-self: center;
+    margin: 5px;
+    padding: 0px;
+
     ul {
-    margin: 0 3vw 0 0;
       height: 100%;
       display: flex;
-      flex-direction: column;
+      /* flex-direction: column; */
       align-items: center;
-    }
-    ul a {
-      font-size: 1.6rem;
-      margin: 5px;
-      padding: 5px 5px;
+      a {
+        width: 100%;
+        font-size: 1.6rem;
+        margin: 5px;
+        padding: 5px 5px;
+      }
     }
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
-      margin-right: 20px;
+    margin-right: 20px;
     ul {
     }
 

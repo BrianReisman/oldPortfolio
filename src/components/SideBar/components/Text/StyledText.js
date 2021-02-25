@@ -5,7 +5,6 @@ const StyledText = styled.div`
   * {
     font-family: "Times New Roman", Times, serif;
     box-sizing: border-box;
-    /* border: .2px solid purple; */
   }
 
   .welcome {
@@ -26,7 +25,6 @@ const StyledText = styled.div`
 
   code {
     font-family: monospace;
-    /* background-color: red; */
     font-size: 1.6rem;
     position: fixed;
     bottom: 0;
@@ -58,64 +56,58 @@ const StyledText = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
+    /* position: fixed; */
+    /* top: 0; */
+
     width: 100%;
     .welcome {
-      padding: 2vh;
-      /* border: 1px solid pink; */
+      text-align: center;
+      padding: 0;
     }
     .name {
-      /* border: 1px solid blue; */
       display: inline;
-      font-size: 7vw;
+      font-size: 8vw;
       :after {
         content: " ";
       }
     }
     .text {
-      font-size: 2.5vw;
+      font-size: 3vw;
     }
     .lastAccent {
-      border: 1px solid black;
       font-size: 4rem;
       line-height: 1vw;
     }
     code {
-      z-index: 1;
-      /* width: 100%; */
-      /* text-align: center; */
-      /* color: aquamarine; */
-      position: relative;
-    }
-    code:before {
-      content: "3";
+      display: none;
+      :before {
+        content: "3";
+      }
     }
   }
-
-
 
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
     code:before {
       content: "4";
     }
     background-color: red;
-}
-@media (max-width: ${(props) => props.theme.breakpoints[5]}) {
-  code:before {
+  }
+  @media (max-width: ${(props) => props.theme.breakpoints[5]}) {
+    code:before {
       content: "5";
     }
 
-    
-}
-@media (max-width: ${(props) => props.theme.breakpoints[6]}) {
-  code:before {
+    background-color: black;
+  }
+  @media (max-width: ${(props) => props.theme.breakpoints[6]}) {
+    code:before {
       content: "6";
     }
-}
-@media (max-width: ${(props) => props.theme.breakpoints[7]}) {
-  code:before {
+  }
+  @media (max-width: ${(props) => props.theme.breakpoints[7]}) {
+    code:before {
       content: "7";
     }
-}
-
+  }
 `;
 export default StyledText;

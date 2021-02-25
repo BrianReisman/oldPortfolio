@@ -28,7 +28,7 @@ const StyledNow = styled.div`
     font-size: 2.4rem;
     text-align: center;
   }
-  .containerNowTop {
+  .whatIveDone {
     text-align: center;
     width: 100%;
     p {
@@ -50,10 +50,17 @@ const StyledNow = styled.div`
       font-size: 1.7rem;
     }
     li {
+      /* :before{
+        content: '';
+        padding: 2px;
+        background-color: ${(props) => props.theme.accent};
+        margin-right: 10px;
+        border-radius: 50px;
+      } */
       font-size: 1.4rem;
       /* border: 1px solid blue; */
       width: 70%;
-      border-left: 3px solid ${(props) => props.theme.accent};
+      border-left: 4px solid ${(props) => props.theme.accent};
       /* border-left: 15px solid salmon; */
       /* border-top: 15px solid tomato; */
       margin: 15px 50px;
@@ -91,7 +98,6 @@ const StyledNow = styled.div`
     }
   }
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
-
     .motion {
       height: 80vh;
     }
@@ -100,7 +106,6 @@ const StyledNow = styled.div`
       /* border: 1px solid blue; */
     }
     ol {
-
       p {
         font-size: 1rem;
       }
@@ -111,6 +116,12 @@ const StyledNow = styled.div`
     }
     h2 {
       font-size: 1.5rem;
+    }
+  }
+  @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
+    .motion{
+
+    /* background-color: black; */
     }
   }
 `;

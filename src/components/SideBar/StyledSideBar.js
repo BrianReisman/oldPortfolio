@@ -24,51 +24,14 @@ const StyledSideBar = styled.div`
     color: ${(props) => props.theme.accent};
   }
 
-
-
-/* //!MOVING ELSEWHERE TO ACTUAL BREAKPOInTS */
-  @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
-    code:before {
-      content: "4";
-    }
-  }
-  @media (max-width: ${(props) => props.theme.breakpoints[5]}) {
-    code:before {
-      content: "5";
-    }
-  }
-  @media (max-width: ${(props) => props.theme.breakpoints[6]}) {
-    code: before {
-      content: "6";
-    }
-  }
-  @media (max-width: ${(props) => props.theme.breakpoints[7]}) {
-    code: before {
-      content: "7";
-    }
-  }
-
   /*//*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 1024 */
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
     * {
     }
     width: 100%;
     height: 20vh;
-    flex-direction: row;
-    justify-content: space-between;
-
-    nav ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    ul a {
-      font-size: 1.6rem;
-      margin: 5px;
-      padding: 5px 5px;
-      border-radius: 13px 0 13px 0;
-      width: 100%;
-    }
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
   }
 
   /* //!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */

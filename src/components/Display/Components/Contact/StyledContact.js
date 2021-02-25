@@ -13,13 +13,25 @@ const StyledContact = styled.div`
     padding-bottom: 15vh;
   }
 
-  * {
-    /* border: 1px solid tomato; */
+  .topContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 3vw;
+    p {
+      font-size: ${(props) => props.theme.fonts.text};
+    }
+    .blueMic {
+      color: blue;
+    }
+    .centerText {
+      line-height: 3vw;
+    }
+    .icons {
+      display: inline-block;
+    }
   }
 
-  p {
-    font-size: ${(props) => props.theme.fonts.text};
-  }
   a {
     color: tomato;
     text-decoration: none;
@@ -40,7 +52,6 @@ const StyledContact = styled.div`
   }
   input {
     font-size: 1.15rem;
-    /* height: 165px; */
     width: 250px;
   }
   textarea {
@@ -52,42 +63,27 @@ const StyledContact = styled.div`
   form {
     /* margin-top: 15vh; */
   }
-  .topContainer {
-    * {
-    }
-    /* border: 1px solid blue; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* margin: 1%; */
-    line-height: 3vw;
-  }
-  .blueMic {
-    color: blue;
-  }
-  .centerText {
-    line-height: 3vw;
-    /* border: 2px dotted turquoise; */
-  }
-
-  .icons {
-    display: inline-block;
-  }
   .inline {
     display: inline;
   }
+
+  code {
+    display: none;
+  }
+
   @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
     textarea {
       font-size: 1.5rem;
       height: 165px;
       width: 57vw;
     }
-    .motion {
-      height: 80vh;
-    }
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
+    .motion {
+      height: 80vh;
+    }
+
     textarea {
       font-size: 1.2rem;
       height: 165px;
@@ -98,18 +94,41 @@ const StyledContact = styled.div`
       /* height: 165px; */
       width: 250px;
     }
+    code {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      text-align: center;
+      margin: 10px;
+    }
+
     .topContainer {
-      line-height: 4vw;
+      line-height: 30px;
+      p {
+        font-size: 1.5rem;
+      }
+      .centerText {
+        line-height: 30px;
+      }
+      .icons {
+        display: inline-block;
+      }
     }
   }
+
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
     textarea {
       height: 165px;
       width: 80vw;
     }
     input {
-      /* height: 165px; */
       width: 250px;
+    }
+    button {
+      width: 50%;
+    }
+    p {
+      font-size: 2rem;
     }
   }
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {

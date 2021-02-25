@@ -73,9 +73,8 @@ const StyledHome = styled.div`
       height: 80vh;
     }
     .photoContainer {
-      background-size: contain;
-      background-position: center;
-      /* background-position: 0% 40%; */
+      background-size: cover;
+      background-position: 50% 35%;
     }
   }
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {

@@ -74,6 +74,8 @@ const Contact = (props) => {
           </button>
           {/* <button onClick={btnClickHandler}>Send it! (You Won't)</button> */}
         </form>
+        <code>Built by Brian. Brought to you in part by electricity. 2021</code>
+
       </motion.div>
     </StyledContact>
   );
