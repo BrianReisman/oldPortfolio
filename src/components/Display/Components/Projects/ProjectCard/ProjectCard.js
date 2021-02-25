@@ -13,7 +13,7 @@ const ProjectCard = ({ projectData: data }) => {
             {[
               data.deploymentLink && (
                 <span key="1">
-                  <a href="/" target="_blank" rel="noreferrer">
+                  <a href={data.deploymentLink} target="_blank" rel="noreferrer">
                     deployment Link
                   </a>
                 </span>
@@ -31,7 +31,7 @@ const ProjectCard = ({ projectData: data }) => {
                 <span key="3">
                   {" "}
                   ||{" "}
-                  <a href="/" target="_blank" rel="noreferrer">
+                  <a href={data.repoLink} target="_blank" rel="noreferrer">
                     GitHub repo
                   </a>
                 </span>
