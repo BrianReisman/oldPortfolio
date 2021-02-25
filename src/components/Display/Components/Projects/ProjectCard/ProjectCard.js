@@ -2,8 +2,6 @@ import React from "react";
 import StyledProjectCard from "./StyledProjectCard";
 
 const ProjectCard = ({ projectData: data }) => {
-  console.log(data);
-
   return (
     <StyledProjectCard>
       <h2>{data.name}</h2>
@@ -14,14 +12,14 @@ const ProjectCard = ({ projectData: data }) => {
           <p>
             {[
               data.deploymentLink && (
-                <span key='1'>
+                <span key="1">
                   <a href="/" target="_blank" rel="noreferrer">
                     deployment Link
                   </a>
                 </span>
               ),
               data.wireframe && (
-                <span key='2'>
+                <span key="2">
                   {" "}
                   ||{" "}
                   <a href="/" target="_blank" rel="noreferrer">
@@ -30,7 +28,7 @@ const ProjectCard = ({ projectData: data }) => {
                 </span>
               ),
               data.repoLink && (
-                <span key='3'>
+                <span key="3">
                   {" "}
                   ||{" "}
                   <a href="/" target="_blank" rel="noreferrer">

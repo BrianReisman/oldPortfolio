@@ -5,7 +5,7 @@ export const projectList = [
     name: "Family Recipe Keeper",
     imageSrc: recipeImage,
     imgAltText: "screenshot of project login page",
-    deploymentLink: "https://family-recipes-ten.vercel.app/signup",
+    deploymentLink: "https://frontend-snowy-sigma.vercel.app/signup",
     cleanDeploymentLink: "family-Recipes.online",
     repoLink: "https://github.com/Secret-Recipes-Build-Week/frontend",
     description:
