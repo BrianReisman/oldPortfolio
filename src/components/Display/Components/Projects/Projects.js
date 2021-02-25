@@ -9,6 +9,10 @@ import {
   pageTransition,
 } from "../../../../animation/animation";
 
+//data
+import {projectList} from './listOfProjects';
+console.log(projectList);
+
 const Projects = (props) => {
   return (
     <StyledProjects>
@@ -23,8 +27,8 @@ const Projects = (props) => {
         {/* <div>Projects</div> */}
         <div className="grid">
           <div className="projectRows">
-            <ProjectCard num="1" />
-            {/* <ProjectCard num="2" /> */}
+            <ProjectCard num="1" projectData={projectList[0]} />
+            {/* <ProjectCard num="2" projectData={projectList[1]}/> */}
           </div>
           <div className="projectRows">
           {/* <ProjectCard num="3" /> */}

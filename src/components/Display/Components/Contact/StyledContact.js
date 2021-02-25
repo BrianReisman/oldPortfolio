@@ -27,9 +27,6 @@ const StyledContact = styled.div`
     .centerText {
       line-height: 3vw;
     }
-    .icons {
-      display: inline-block;
-    }
   }
 
   a {
@@ -109,9 +106,6 @@ const StyledContact = styled.div`
       }
       .centerText {
         line-height: 30px;
-      }
-      .icons {
-        display: inline-block;
       }
     }
   }

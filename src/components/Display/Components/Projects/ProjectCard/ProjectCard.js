@@ -1,35 +1,44 @@
 import React from "react";
 import StyledProjectCard from "./StyledProjectCard";
 
-import image from "../../../../../assets/images/FamilyRecipeSignUp.png";
+const ProjectCard = ({ projectData: data }) => {
+  console.log(data);
 
-const ProjectCard = (props) => {
   return (
     <StyledProjectCard>
-      <h2>Family Recipe Keeper</h2>
+      <h2>{data.name}</h2>
       <div className="imgRow">
-        <img src={image} alt="iamge of project" />
+        <img src={data.imageSrc} alt={data.imgAltText} />
         <div className="textDiv">
+          <p>{data.description}</p>
           <p>
-            This app stores all of your family recipes. You can create your own
-            account to poke around or sign in with our hardcoded user's info at{" "}
-            <a
-              href="https://family-recipes-ten.vercel.app/signup"
-              target="_blank"
-              rel="noreferrer"
-            >
-              family-Recipes.com
-            </a>.{" "}
-            This React app manages state with Redux and uses Styled-Components
-            for styling, and is deployed on Vercel.{" "}
-            <a
-              href="https://github.com/Secret-Recipes-Build-Week/frontend"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub repo
-            </a>
-            .
+            {[
+              data.deploymentLink && (
+                <span key='1'>
+                  <a href="/" target="_blank" rel="noreferrer">
+                    deployment Link
+                  </a>
+                </span>
+              ),
+              data.wireframe && (
+                <span key='2'>
+                  {" "}
+                  ||{" "}
+                  <a href="/" target="_blank" rel="noreferrer">
+                    wireframe
+                  </a>
+                </span>
+              ),
+              data.repoLink && (
+                <span key='3'>
+                  {" "}
+                  ||{" "}
+                  <a href="/" target="_blank" rel="noreferrer">
+                    GitHub repo
+                  </a>
+                </span>
+              ),
+            ]}
           </p>
         </div>
       </div>

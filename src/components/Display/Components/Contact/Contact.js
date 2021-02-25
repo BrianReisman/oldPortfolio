@@ -33,12 +33,12 @@ const Contact = (props) => {
             </a>
             ?
           </p>
-          <p className="inline">
-            More digital proof I exist?
-            <span className="icons">
-              <Icons />
-            </span>
-          </p>
+
+          <div className="iconRow">
+            <p className="inline">More digital proof I exist?</p>
+            <Icons />
+          </div>
+
           <p className="centerText">
             For anything else feel free to <span className="blueMic">🎙</span>💬
             ask me 👇
@@ -48,19 +48,11 @@ const Contact = (props) => {
         <form action="MAILTO:'brianreisman@protonmail.com'">
           <label htmlFor="name">
             {/* {"Name"} */}
-            <input
-              type="text"
-              id="name"
-              placeholder="name"
-            />
+            <input type="text" id="name" placeholder="name" />
           </label>
           <label htmlFor="email">
             {/* {"Email"} */}
-            <input
-              type="text"
-              id="email"
-              placeholder="email"
-            />
+            <input type="text" id="email" placeholder="email" />
           </label>
           <label htmlFor="message">
             {/* {"Message"} */}
@@ -75,7 +67,6 @@ const Contact = (props) => {
           {/* <button onClick={btnClickHandler}>Send it! (You Won't)</button> */}
         </form>
         <code>Built by Brian. Brought to you in part by electricity. 2021</code>
-
       </motion.div>
     </StyledContact>
   );

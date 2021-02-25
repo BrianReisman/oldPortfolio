@@ -5,11 +5,11 @@ const StyledProjects = styled.div`
     /* border: 1px dotted red; */
   }
 
-  :hover {
+  /* :hover {
     h2 {
       color: tomato;
     }
-  }
+  } */
 
   //!truncate .truncate {
   //!text-overflow: ellipsis; */
@@ -19,8 +19,8 @@ const StyledProjects = styled.div`
 
   box-sizing: border-box;
   width: 50%;
-  border: 1px solid ${props => props.theme.highlight};
-  box-shadow: 1px 1px 3px;
+  border: 1px solid ${(props) => props.theme.highlight};
+  box-shadow: 1px 1px 3px #ddd;
   padding: 5px;
   margin: 10px;
   img {
@@ -29,7 +29,7 @@ const StyledProjects = styled.div`
   h2 {
     font-size: 3.5rem;
     margin-bottom: 5px;
-    transition-duration: .1s;
+    transition-duration: 0.1s;
   }
   h3 {
     font-size: 2.5rem;
@@ -38,7 +38,10 @@ const StyledProjects = styled.div`
     font-size: 1.6rem;
     margin: 0 5px;
   }
-
+  a {
+    color: ${(props) => props.theme.accent};
+    text-decoration: none;
+  }
   .imgRow {
     display: block;
     text-align: center;
