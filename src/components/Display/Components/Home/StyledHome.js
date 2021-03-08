@@ -80,7 +80,7 @@ const StyledHome = styled.div`
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
     .photoContainer {
       background-size: cover;
-      /* background-position: center; */
+      background-position: 30%;
     }
 
 }

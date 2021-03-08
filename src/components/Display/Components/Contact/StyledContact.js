@@ -121,8 +121,10 @@ const StyledContact = styled.div`
     button {
       width: 50%;
     }
-    p {
-      font-size: 2rem;
+    .topContainer {
+      p {
+        font-size: 1.2rem;
+      }
     }
   }
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
