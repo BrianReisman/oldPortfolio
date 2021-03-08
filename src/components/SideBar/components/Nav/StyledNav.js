@@ -67,14 +67,21 @@ const StyledNav = styled.nav`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
-    margin-right: 20px;
+    *{
+
+    /* border: 1px solid black; */
+    }
+    width: 385px;
+    height: 40px;
+    /* margin-bottom: 10px; */
     ul {
     }
 
-    border: 1px solid black;
     ul a {
-      border: 1px solid black;
-      width: 100%;
+        font-size: 1.4rem;
+        padding: 3px 3px;
+      /* border: 1px solid black; */
+
     }
   }
 `;

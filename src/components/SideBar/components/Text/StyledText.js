@@ -84,20 +84,57 @@ const StyledText = styled.div`
         content: "3";
       }
     }
+    /* background-color: red; */
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
+
+
+    .name {
+      font-size: 10vw;
+    }
+    .text {
+      font-size: 5vw;
+      letter-spacing: 1px;
+    }
+    .lastAccent {
+      font-size: 4rem;
+      line-height: 1vw;
+    }
+    code {
+      display: none;
+      :before {
+        content: "3";
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     code:before {
       content: "4";
     }
-    background-color: red;
   }
   @media (max-width: ${(props) => props.theme.breakpoints[5]}) {
     code:before {
       content: "5";
     }
 
-    background-color: black;
+    background-color: red;
+    /* background-color: black; */
   }
   @media (max-width: ${(props) => props.theme.breakpoints[6]}) {
     code:before {

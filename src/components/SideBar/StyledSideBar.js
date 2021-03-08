@@ -24,19 +24,23 @@ const StyledSideBar = styled.div`
     color: ${(props) => props.theme.accent};
   }
 
-  /*//*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 1024 */
   @media (max-width: ${(props) => props.theme.breakpoints[3]}) {
     * {
     }
     width: 100%;
     height: 20vh;
-    /* flex-direction: row; */
-    /* justify-content: space-between; */
   }
 
   /* //!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
+justify-content: space-space-around;
+    height: 20vh;
 
-  /*//* 768 --- TOP */
+}
+  /*//*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 1024 */
+
+
+
   @media (max-width: 768px) {
     //!Orange
     ul a {
