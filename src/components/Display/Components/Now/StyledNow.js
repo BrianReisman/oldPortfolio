@@ -88,7 +88,6 @@ const StyledNow = styled.div`
       }
     }
   }
-
   @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
     * {
       box-sizing: border-box;
@@ -120,9 +119,32 @@ const StyledNow = styled.div`
   }
   @media (max-width: ${(props) => props.theme.breakpoints[4]}) {
     .motion{
-
     /* background-color: black; */
+    padding: 25px 0;
+
     }
+    li{
+      /* width: % */
+      padding: 0;
+
+    }
+    * {
+      line-height: 1.6rem;
+      /* border: 1px solid blue; */
+    }
+    ol {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .NowTop h2,
+    .NowTop p {
+      line-height: auto;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+
   }
 `;
 export default StyledNow;
