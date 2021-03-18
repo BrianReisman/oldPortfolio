@@ -28,12 +28,12 @@ const Projects = (props) => {
         <div className="grid">
           <div className="projectRows">
             <ProjectCard num="1" projectData={projectList[0]} />
-            {/* <ProjectCard num="2" projectData={projectList[1]}/> */}
+            <ProjectCard num="2" projectData={projectList[1]}/>
           </div>
-          <div className="projectRows">
+          {/* <div className="projectRows"> */}
           {/* <ProjectCard num="3" /> */}
           {/* <ProjectCard num="4" /> */}
-        </div>
+        {/* </div> */}
         </div>
       </motion.div>
     </StyledProjects>

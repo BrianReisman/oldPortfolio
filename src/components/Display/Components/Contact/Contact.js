@@ -48,15 +48,16 @@ const Contact = (props) => {
         <form action="MAILTO:'brianreisman@protonmail.com'">
           <label htmlFor="name">
             {/* {"Name"} */}
-            <input type="text" id="name" placeholder="name" />
+            <input disabled type="text" id="name" placeholder="name" />
           </label>
           <label htmlFor="email">
             {/* {"Email"} */}
-            <input type="text" id="email" placeholder="email" />
+            <input disabled type="text" id="email" placeholder="email" />
           </label>
           <label htmlFor="message">
             {/* {"Message"} */}
             <textarea
+              disabled
               id="message"
               placeholder="Messages written in verse will be replied to first."
             />
