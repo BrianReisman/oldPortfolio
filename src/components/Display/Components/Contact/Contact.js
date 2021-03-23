@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 //
@@ -7,12 +7,21 @@ import PDF from "../../../../assets/documents/BrianReismanResume.pdf";
 import Icons from "../Icons/Icons";
 import { pageVariants, pageTransition } from "../../../../animation/animation";
 
+const initFormState = { name: "", email: "", message: "" };
+
 const Contact = (props) => {
+  const [form, setForm] = useState(initFormState);
+  console.log(form);
+
   const btnClickHandler = (e) => {
     e.preventDefault();
     alert(
       "I would've clicked the button out of curiosity too! We have so much in common. I have a feeling we will get along swimmingly! Feel free to contact me directly at BrianReisman@ProtonMail.com"
     );
+  };
+
+  const changeHandler = (e) => {
+    setForm({...form, [e.target.id]: e.target.value});
   };
 
   return (
@@ -48,16 +57,26 @@ const Contact = (props) => {
         <form action="MAILTO:'brianreisman@protonmail.com'">
           <label htmlFor="name">
             {/* {"Name"} */}
-            <input disabled type="text" id="name" placeholder="name" />
+            <input
+              onChange={changeHandler}
+              type="text"
+              id="name"
+              placeholder="name"
+            />
           </label>
           <label htmlFor="email">
             {/* {"Email"} */}
-            <input disabled type="text" id="email" placeholder="email" />
+            <input
+              onChange={changeHandler}
+              type="text"
+              id="email"
+              placeholder="email"
+            />
           </label>
           <label htmlFor="message">
             {/* {"Message"} */}
             <textarea
-              disabled
+              onChange={changeHandler}
               id="message"
               placeholder="Messages written in verse will be replied to first."
             />
