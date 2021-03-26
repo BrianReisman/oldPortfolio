@@ -1,10 +1,11 @@
 
 
 :root{
-  --accent: tomato;
-  --backgroundColor: #fff1e0;
-  /* --backgroundColor: antiquewhite; */
-  --backgroundColor: lightgoldenrodyellow;
+  /* --accent: #eb2466; */
+  --accent: #f84c2e;
+  --backgroundColor: #f5f5e9;
+  /* --backgroundColor: rgba(250, 245, 240, 0.692); */
+  /* --backgroundColor: lightgoldenrodyellow; */
   /* --backgroundColor: rgba(215, 250, 224, 0.521); */
   --highlight: #eee;
   /* --asdf: rgb(129, 112, 109); */

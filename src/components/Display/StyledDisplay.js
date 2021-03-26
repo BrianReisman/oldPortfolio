@@ -5,7 +5,7 @@ const StyledDisplay = styled.main`
     /* border: 1px solid tomato; */
   }
   box-sizing: border-box;
-
+background-color: ${props => props.theme.backgroundColor};
   flex: 1 1 65%;
   height: 100vh;
   display: flex;

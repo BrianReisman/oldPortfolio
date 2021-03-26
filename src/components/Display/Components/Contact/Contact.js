@@ -62,6 +62,7 @@ const Contact = (props) => {
               type="text"
               id="name"
               placeholder="name"
+              value={form.name}
             />
           </label>
           <label htmlFor="email">
@@ -71,6 +72,7 @@ const Contact = (props) => {
               type="text"
               id="email"
               placeholder="email"
+              value={form.email}
             />
           </label>
           <label htmlFor="message">
@@ -79,6 +81,7 @@ const Contact = (props) => {
               onChange={changeHandler}
               id="message"
               placeholder="Messages written in verse will be replied to first."
+              value={form.message}
             />
           </label>
           <button onClick={btnClickHandler}>
